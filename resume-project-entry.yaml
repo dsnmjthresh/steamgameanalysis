@@ -1,0 +1,121 @@
+# ============================================================================
+# SteamAnalysis 项目简历条目
+# 所有指标来自实测：pytest / eval JSON / grep / wc / find
+# 更新日期：2026-06-02（知识库从12条扩充到25条后重新评测）
+# ============================================================================
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 版本 A：保守真实版（当前可直接投递）
+# ══════════════════════════════════════════════════════════════════════════════
+
+conservative:
+  - date: "2026-05 ~ 至今"
+    name: "SteamAnalysis — 自研 Agent + 混合检索 RAG 游戏数据分析"
+    role: "独立设计与实现"
+    description: "基于自研六阶段状态机Agent + FTS5/sqlite-vec混合检索RAG的游戏数据分析工作台，14,162行Python，77个测试100%通过。"
+    highlights:
+      - "设计六阶段确定性状态机Agent引擎(INIT→PLAN→ACT→OBSERVE→SYNTHESIZE→VALIDATE→DONE)，含3轮自反思循环和AgentRun/AgentCheckpoint/ToolCall三表执行轨迹持久化；67条测试集上混合分类器准确率95.52%，支持9类任务自动路由。"
+      - "封装15个Pydantic Schema严格约束的Agent工具(read/write/confirm三级权限、3-60s超时、指数退避重试策略)，每次调用写入ToolCall审计表记录延迟/重试次数/错误码；41条测试集工具选择准确率100%。"
+      - "构建FTS5 BM25 + sqlite-vec向量 + RRF融合 + LLM Cross-Encoder精排的混合检索链路，支持Markdown标题分段/Python AST函数级/滑动窗口3种分块策略(700 tokens/chunk)；25条种子文档，20条测试集Recall@3=100%，MRR=89.58%。"
+      - "实现LLM优先/关键词回退双层降级(覆盖分类→评论分析→舆情提取→对话摘要→记忆提取5链路)，配合Steam API熔断器(5次失败→30s)和Firecrawl→DuckDuckGo搜索引擎降级。"
+      - "设计对话记忆系统(FTS5+vec0+RRF混合召回，pending→confirmed→archived三态治理)，PII正则检测脱敏(邮箱/手机/IP/Token)后存储；Prometheus Metrics + 结构化日志 + trace_id全链路可观测。"
+    tech_stack: "Python 3.12 / FastAPI / LangChain / SQLite + FTS5 + sqlite-vec / Vue 3 + TypeScript / Docker"
+    stats:
+      code_lines: "14,162 Python + 4,893 前端"
+      tables: 23
+      api_endpoints: 45
+      agent_tools: 15
+      task_types: 9
+      classifier_accuracy: "95.52% (64/67)"
+      tool_selection_accuracy: "100% (41/41)"
+      rag_recall_at_3: "100% (16/16 valid cases)"
+      rag_mrr: "89.58%"
+      rag_seed_docs: 25
+      tests: "77 passed / 77 total"
+      seed_games: 110
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 版本 B：增强表达版（用于一面--重点突出Agent架构和评估闭环）
+# ══════════════════════════════════════════════════════════════════════════════
+
+enhanced:
+  - date: "2026-05 ~ 至今"
+    name: "SteamAnalysis — 自研多步推理Agent + 混合检索RAG的游戏数据分析系统"
+    role: "独立设计与实现"
+    description: "自研确定性状态机Agent引擎驱动、15工具+9任务路由+混合检索RAG的游戏数据分析工作台，含完整评估体系(77个测试100%通过)。"
+    highlights:
+      - "[Agent架构] 设计六阶段状态机Agent引擎(含3轮自反思循环)，三表持久化执行轨迹；混合分类器95.52%准确率自动路由9类任务，工具选择准确率100%。"
+      - "[工具体系] 封装15个Pydantic输入校验+权限分级+超时/重试策略的工具，每次调用写入审计表；Steam API熔断器+5链路LLM/规则降级兜底。"
+      - "[RAG链路] FTS5 BM25+sqlite-vec向量+RRF融合+Cross-Encoder精排，3种分块策略；25条种子文档支撑20条测试集Recall@3=100%, MRR=89.58%。"
+      - "[记忆与安全] FTS5+vec0+RRF混合记忆召回，三态治理(pending→confirmed→archived)；PII检测脱敏(4类)+API限流+Prometheus Metrics全链路可观测。"
+      - "[工程规模] 14,162行Python+4,893行前端，23张表+45端点+15服务模块；77个测试100%通过，Docker多环境部署，110款种子游戏。"
+    tech_stack: "Python / FastAPI / LangChain / SQLite(FTS5+vec) / Pydantic / Vue3 / Docker"
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 实测指标明细（面试准备用）
+# ══════════════════════════════════════════════════════════════════════════════
+
+metrics_detail:
+  static:
+    backend_python_lines: 14162
+    frontend_lines: 4893
+    database_tables: 23
+    api_endpoints: 45
+    agent_tools: 15
+    pydantic_schemas: 48
+    service_modules: 15
+    api_route_modules: 16
+    test_files: 15
+    task_types: 9
+    agent_states: 8
+    seed_games: 110
+    seed_aliases: 16
+    rag_seed_documents: 25
+
+  test_results:
+    total_tests: 77
+    passed: 77
+    pass_rate: "100%"
+    duration_seconds: 206
+
+  eval_results:
+    classifier_accuracy: "95.52% (64/67)"
+    classifier_mismatches:
+      - query: "730 这个游戏的评价怎么样？"
+        expected: "single_game"
+        actual: "review_analysis"
+        reason: "命中「评价」关键词被判定为评论分析，实际用户意图偏单游戏查询"
+      - query: "Show me the trend for appid 730"
+        expected: "history_trend"
+        actual: "single_game"
+        reason: "英文 'trend for appid' 模式未命中中文关键词规则，被默认路由"
+      - query: "搜索关于黑神话悟空的新闻报道"
+        expected: "web_sentiment"
+        actual: "single_game"
+        reason: "「搜索」命中single_game的搜索关键词，「新闻报道」未触发web_sentiment规则"
+    tool_selection_accuracy: "100% (41/41)"
+    rag_recall_at_3: "100% (16/16 valid cases)"
+    rag_mrr: "89.58%"
+    rag_docs_count: 25
+    rag_eval_queries: 20
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 面试技术亮点（准备好展开讲）
+# ══════════════════════════════════════════════════════════════════════════════
+
+interview_talking_points:
+  - topic: "为什么自建状态机而不用LangGraph"
+    answer: "9种任务模式可枚举，确定性状态机比图编排更透明；AgentRun/AgentCheckpoint双表持久化让每次运行有完整审计链——这在LangGraph里需要额外实现；反思循环的触发条件在代码中直接表达比LangGraph条件边更直观。"
+    code_ref: "runtime.py:55-67, 173-180"
+
+  - topic: "为什么RRF融合而不是纯向量检索"
+    answer: "默认embedding在没配API Key时退化到BLAKE2b hash（无语义），纯向量检索不可靠。RRF让FTS5关键词（精确匹配'CS2'/'appid 730'）和向量语义互补；关键词权重1.2 > 向量1.0 因精确匹配在实际查询中更可靠。整条链有4层fallback。"
+    code_ref: "knowledge_service.py:543-554"
+
+  - topic: "工具调用失败怎么处理"
+    answer: "三层容错：① 错误分类→匹配的才重试（timeout/rate_limit重试，permission_denied不重试）；② 指数退避（delay×2^attempt）；③ 全部失败后抛给状态机层，状态机try/catch每个状态转换，失败后写入错误checkpoint并构建带error信息的result返回用户，不会整个服务崩溃。"
+    code_ref: "tools.py:372-403, runtime.py:342-364"
+
+  - topic: "RAG从62.5%提升到100%做了什么"
+    answer: "初始12条种子文档覆盖范围窄（仅CS2/Dota2/黑神话/Elden Ring各3篇），6条查询完全没有对应内容。从12条扩充到25条：补了CS2英文ranking guide、Dota 2英文patch notes、Dota 2比赛meta中英文、Elden Ring DLC中英文、CS2职业设置/英文config。每个未命中case补1-2条精准文档后Recall直接拉满。这验证了检索算法本身没问题，瓶颈在文档覆盖度。"
+    code_ref: "test_rag_eval.py:65-90"

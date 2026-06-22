@@ -1,0 +1,116 @@
+# Production Docker Compose — pre-built images + health checks + nginx
+# Usage: docker compose -f docker-compose.prod.yml up
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: steamanalysis-backend-prod
+    ports:
+      - "9000:9000"
+    volumes:
+      - steamanalysis_data_prod:/app/data
+    environment:
+      - STEAMANALYSIS_ENV=production
+      - STEAMANALYSIS_DATABASE_URL=sqlite:////app/data/steamanalysis.sqlite3
+      - STEAMANALYSIS_DEFAULT_CC=${STEAMANALYSIS_DEFAULT_CC:-CN}
+      - STEAMANALYSIS_DEFAULT_LANGUAGE=${STEAMANALYSIS_DEFAULT_LANGUAGE:-schinese}
+      - STEAMANALYSIS_DEFAULT_CURRENCY=${STEAMANALYSIS_DEFAULT_CURRENCY:-CNY}
+      - STEAMANALYSIS_DEEPSEEK_MODEL=${STEAMANALYSIS_DEEPSEEK_MODEL:-deepseek-v4-pro}
+      - STEAMANALYSIS_DEEPSEEK_FALLBACK_MODEL=${STEAMANALYSIS_DEEPSEEK_FALLBACK_MODEL:-}
+      - STEAMANALYSIS_ALLOW_MODEL_FALLBACK=${STEAMANALYSIS_ALLOW_MODEL_FALLBACK:-true}
+      - STEAMANALYSIS_CORS_ORIGINS=${STEAMANALYSIS_CORS_ORIGINS:-http://localhost}
+      - STEAMANALYSIS_LOG_LEVEL=${STEAMANALYSIS_LOG_LEVEL:-INFO}
+      - STEAMANALYSIS_REQUEST_TIMEOUT_SECONDS=${STEAMANALYSIS_REQUEST_TIMEOUT_SECONDS:-12}
+      - STEAMANALYSIS_AUTH_TOKEN=${STEAMANALYSIS_AUTH_TOKEN:?Set STEAMANALYSIS_AUTH_TOKEN for production}
+      - STEAMANALYSIS_ENABLE_SCHEDULER=false
+      - STEAMANALYSIS_ENABLE_TASK_WORKER=false
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - STEAM_API_KEY=${STEAM_API_KEY:-}
+      - FIRECRAWL_API_KEY=${FIRECRAWL_API_KEY:-}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:9000/api/health').raise_for_status()"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  task_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: steamanalysis-task-worker-prod
+    command: python -m app.worker.task_worker
+    volumes:
+      - steamanalysis_data_prod:/app/data
+    environment:
+      - STEAMANALYSIS_ENV=production
+      - STEAMANALYSIS_DATABASE_URL=sqlite:////app/data/steamanalysis.sqlite3?timeout=30
+      - STEAMANALYSIS_DEFAULT_CC=${STEAMANALYSIS_DEFAULT_CC:-CN}
+      - STEAMANALYSIS_DEFAULT_LANGUAGE=${STEAMANALYSIS_DEFAULT_LANGUAGE:-schinese}
+      - STEAMANALYSIS_DEFAULT_CURRENCY=${STEAMANALYSIS_DEFAULT_CURRENCY:-CNY}
+      - STEAMANALYSIS_LOG_LEVEL=${STEAMANALYSIS_LOG_LEVEL:-INFO}
+      - STEAMANALYSIS_ENABLE_SCHEDULER=false
+      - STEAMANALYSIS_AUTH_TOKEN=${STEAMANALYSIS_AUTH_TOKEN:?Set STEAMANALYSIS_AUTH_TOKEN for production}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - STEAM_API_KEY=${STEAM_API_KEY:-}
+      - FIRECRAWL_API_KEY=${FIRECRAWL_API_KEY:-}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: steamanalysis-scheduler-prod
+    command: python -m app.worker.scheduler
+    volumes:
+      - steamanalysis_data_prod:/app/data
+    environment:
+      - STEAMANALYSIS_ENV=production
+      - STEAMANALYSIS_DATABASE_URL=sqlite:////app/data/steamanalysis.sqlite3?timeout=30
+      - STEAMANALYSIS_DEFAULT_CC=${STEAMANALYSIS_DEFAULT_CC:-CN}
+      - STEAMANALYSIS_DEFAULT_LANGUAGE=${STEAMANALYSIS_DEFAULT_LANGUAGE:-schinese}
+      - STEAMANALYSIS_DEFAULT_CURRENCY=${STEAMANALYSIS_DEFAULT_CURRENCY:-CNY}
+      - STEAMANALYSIS_LOG_LEVEL=${STEAMANALYSIS_LOG_LEVEL:-INFO}
+      - STEAMANALYSIS_ENABLE_SCHEDULER=true
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - STEAM_API_KEY=${STEAM_API_KEY:-}
+      - FIRECRAWL_API_KEY=${FIRECRAWL_API_KEY:-}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,os,sys; f=os.environ.get('STEAMANALYSIS_SCHEDULER_HEALTH_FILE','/tmp/steamanalysis-scheduler.health'); d=json.load(open(f)); sys.exit(0 if d.get('running') else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: steamanalysis-frontend-prod
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:80/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  steamanalysis_data_prod:
+    driver: local

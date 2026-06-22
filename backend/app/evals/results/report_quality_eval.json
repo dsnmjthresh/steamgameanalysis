@@ -1,0 +1,320 @@
+{
+  "average_composite_score": 0.7928,
+  "total_cases": 22,
+  "threshold": 0.75,
+  "threshold_passed": true,
+  "severe_failures": 0,
+  "zero_penalty_cases": [
+    "rq_004",
+    "rq_008",
+    "rq_019"
+  ],
+  "dimension_averages": {
+    "completeness": 0.9083,
+    "citation_presence": 0.6909,
+    "unsupported_claim_penalty": 0.7955,
+    "uncertainty_disclosure": 0.7235
+  },
+  "dimension_ranges": {
+    "completeness": {
+      "min": 0.75,
+      "max": 1.0
+    },
+    "citation_presence": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "unsupported_claim_penalty": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "uncertainty_disclosure": {
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "results": [
+    {
+      "case_id": "rq_001",
+      "task_type": "single_game",
+      "quality_label": "excellent",
+      "query": "CS2 现在有多少玩家在线？",
+      "completeness": 1.0,
+      "citation_presence": 1.0,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 1.0,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_002",
+      "task_type": "single_game",
+      "quality_label": "good",
+      "query": "Elden Ring 的价格和打折信息",
+      "completeness": 1.0,
+      "citation_presence": 1.0,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 1.0,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_003",
+      "task_type": "single_game",
+      "quality_label": "adequate",
+      "query": "Dota 2 的游戏详情和评价如何？",
+      "completeness": 0.8,
+      "citation_presence": 1.0,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 0.93,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_004",
+      "task_type": "single_game",
+      "quality_label": "marginal",
+      "query": "黑神话悟空的最新消息",
+      "completeness": 1.0,
+      "citation_presence": 0.7,
+      "unsupported_claim_penalty": 0.0,
+      "uncertainty_disclosure": 0.3333,
+      "composite_score": 0.61,
+      "failed_checks": [
+        "unsupported_claim_penalty=0%",
+        "uncertainty_disclosure=33%"
+      ]
+    },
+    {
+      "case_id": "rq_005",
+      "task_type": "single_game",
+      "quality_label": "poor",
+      "query": "730 这个游戏怎么样？",
+      "completeness": 0.75,
+      "citation_presence": 0.0,
+      "unsupported_claim_penalty": 0.5,
+      "uncertainty_disclosure": 0.0,
+      "composite_score": 0.3625,
+      "failed_checks": [
+        "citation_presence=0%",
+        "uncertainty_disclosure=0%"
+      ]
+    },
+    {
+      "case_id": "rq_006",
+      "task_type": "game_comparison",
+      "quality_label": "excellent",
+      "query": "对比 CS2 和 Dota 2 的在线人数",
+      "completeness": 1.0,
+      "citation_presence": 1.0,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 1.0,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_007",
+      "task_type": "game_comparison",
+      "quality_label": "good",
+      "query": "Elden Ring 和 Dark Souls 3 的价格比较",
+      "completeness": 1.0,
+      "citation_presence": 1.0,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 1.0,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_008",
+      "task_type": "game_comparison",
+      "quality_label": "marginal",
+      "query": "CS2 和 Valorant 哪个更受欢迎？",
+      "completeness": 1.0,
+      "citation_presence": 1.0,
+      "unsupported_claim_penalty": 0.0,
+      "uncertainty_disclosure": 0.6667,
+      "composite_score": 0.75,
+      "failed_checks": [
+        "unsupported_claim_penalty=0%"
+      ]
+    },
+    {
+      "case_id": "rq_009",
+      "task_type": "game_comparison",
+      "quality_label": "poor",
+      "query": "比较一下 730 和 570",
+      "completeness": 0.75,
+      "citation_presence": 0.0,
+      "unsupported_claim_penalty": 0.6667,
+      "uncertainty_disclosure": 0.0,
+      "composite_score": 0.3958,
+      "failed_checks": [
+        "citation_presence=0%",
+        "uncertainty_disclosure=0%"
+      ]
+    },
+    {
+      "case_id": "rq_010",
+      "task_type": "history_trend",
+      "quality_label": "excellent",
+      "query": "CS2 过去一个月的玩家趋势",
+      "completeness": 0.8333,
+      "citation_presence": 0.6,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 0.75,
+      "composite_score": 0.7842,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_011",
+      "task_type": "history_trend",
+      "quality_label": "good",
+      "query": "黑神话悟空的价格变化曲线",
+      "completeness": 1.0,
+      "citation_presence": 1.0,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 1.0,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_012",
+      "task_type": "history_trend",
+      "quality_label": "adequate",
+      "query": "看看 Dota 2 最近30天的在线走势",
+      "completeness": 1.0,
+      "citation_presence": 0.6,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 0.88,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_013",
+      "task_type": "history_trend",
+      "quality_label": "marginal",
+      "query": "730 的历史数据变化趋势",
+      "completeness": 0.8,
+      "citation_presence": 0.6,
+      "unsupported_claim_penalty": 0.3333,
+      "uncertainty_disclosure": 0.0,
+      "composite_score": 0.5267,
+      "failed_checks": [
+        "unsupported_claim_penalty=33%",
+        "uncertainty_disclosure=0%"
+      ]
+    },
+    {
+      "case_id": "rq_014",
+      "task_type": "review_analysis",
+      "quality_label": "excellent",
+      "query": "分析 CS2 的玩家评论",
+      "completeness": 1.0,
+      "citation_presence": 1.0,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 1.0,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_015",
+      "task_type": "review_analysis",
+      "quality_label": "good",
+      "query": "Elden Ring 的口碑怎么样",
+      "completeness": 0.75,
+      "citation_presence": 1.0,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 0.9125,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_016",
+      "task_type": "review_analysis",
+      "quality_label": "adequate",
+      "query": "黑神话悟空的差评在说什么",
+      "completeness": 0.75,
+      "citation_presence": 0.6,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 0.7925,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_017",
+      "task_type": "web_sentiment",
+      "quality_label": "good",
+      "query": "网上对 CS2 的评价如何？",
+      "completeness": 0.8,
+      "citation_presence": 0.7,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 0.84,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_018",
+      "task_type": "web_sentiment",
+      "quality_label": "adequate",
+      "query": "社交媒体上关于 Elden Ring 的讨论",
+      "completeness": 1.0,
+      "citation_presence": 0.6,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 0.5,
+      "composite_score": 0.805,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_019",
+      "task_type": "web_sentiment",
+      "quality_label": "poor",
+      "query": "社区对 Dota 2 新版本的反应",
+      "completeness": 1.0,
+      "citation_presence": 0.0,
+      "unsupported_claim_penalty": 0.0,
+      "uncertainty_disclosure": 0.0,
+      "composite_score": 0.35,
+      "failed_checks": [
+        "citation_presence=0%",
+        "unsupported_claim_penalty=0%",
+        "uncertainty_disclosure=0%"
+      ]
+    },
+    {
+      "case_id": "rq_020",
+      "task_type": "knowledge_qa",
+      "quality_label": "excellent",
+      "query": "CS2 的武器系统有哪些？",
+      "completeness": 0.75,
+      "citation_presence": 0.6,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 0.7925,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_021",
+      "task_type": "knowledge_qa",
+      "quality_label": "adequate",
+      "query": "Dota 2 的排位系统怎么运作？",
+      "completeness": 1.0,
+      "citation_presence": 0.6,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 0.6667,
+      "composite_score": 0.83,
+      "failed_checks": []
+    },
+    {
+      "case_id": "rq_022",
+      "task_type": "knowledge_qa",
+      "quality_label": "good",
+      "query": "黑神话悟空需要什么配置？",
+      "completeness": 1.0,
+      "citation_presence": 0.6,
+      "unsupported_claim_penalty": 1.0,
+      "uncertainty_disclosure": 1.0,
+      "composite_score": 0.88,
+      "failed_checks": []
+    }
+  ]
+}

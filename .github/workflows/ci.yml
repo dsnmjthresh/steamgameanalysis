@@ -1,0 +1,138 @@
+# SteamAnalysis CI — backend tests/evals/lint/typecheck, frontend test/lint/typecheck/build, fresh DB migration
+# Triggered on push/PR to main, and manually via workflow_dispatch.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Cancel in-progress runs on the same branch/PR to save runner minutes
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── Backend: tests, evals, lint (ruff), typecheck (mypy) ──────────────
+  backend:
+    name: Backend (tests / evals / ruff / mypy)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/pyproject.toml
+
+      - name: Install dependencies
+        run: pip install ".[test]"
+
+      - name: Run backend unit tests
+        run: python -m pytest app/tests -q --tb=short
+
+      - name: Run backend evals
+        run: python -m pytest app/evals -q --tb=short
+
+      - name: Upload eval results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-results
+          path: backend/app/evals/results/
+          if-no-files-found: ignore
+
+      - name: Lint (ruff)
+        run: python -m ruff check app
+
+      - name: Typecheck (mypy)
+        run: python -m mypy app
+
+  # ── Frontend: unit tests, typecheck (vue-tsc), lint (eslint), build ──
+  frontend:
+    name: Frontend (test / typecheck / lint / build)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Unit tests (vitest)
+        run: npm run test:unit -- --run
+
+      - name: Typecheck (vue-tsc)
+        run: npm run typecheck
+
+      - name: Lint (eslint)
+        run: npm run lint
+
+      - name: Build (vite)
+        run: npm run build
+
+      - name: Upload build artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist/
+          if-no-files-found: ignore
+
+  # ── Database: fresh SQLite + alembic upgrade head ────────────────────
+  migration:
+    name: DB Migration (fresh SQLite + alembic upgrade head)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/pyproject.toml
+
+      - name: Install dependencies
+        run: pip install ".[test]"
+
+      - name: Run alembic upgrade head on fresh SQLite
+        run: |
+          # Use a unique temp file to avoid collision with concurrent runs
+          TMP_DB="/tmp/steamanalysis_ci_migration_$$.sqlite3"
+          export STEAMANALYSIS_DATABASE_URL="sqlite:///${TMP_DB}"
+          echo "Using database: ${STEAMANALYSIS_DATABASE_URL}"
+          python -m alembic upgrade head
+          echo "Migration completed successfully."
+          rm -f "${TMP_DB}"
+        env:
+          STEAMANALYSIS_ENV: ci

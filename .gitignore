@@ -1,0 +1,31 @@
+.firecrawl/
+ai-note/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+dist/
+coverage/
+.env
+.env.local
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.egg-info/
+
+# E2E test artifacts
+playwright-report/
+test-results/
+
+# Frontend build output
+frontend/dist/
+
+# Local environment overrides
+frontend/.env.local
+
+# Log directory (defence-in-depth — *.log already covers extensions)
+logs/

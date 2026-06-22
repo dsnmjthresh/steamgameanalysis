@@ -1,0 +1,272 @@
+{
+  "recall_at_3": 1.0,
+  "mrr": 0.8958,
+  "total_cases": 20,
+  "valid_cases": 16,
+  "results": [
+    {
+      "index": 0,
+      "query": "CS2 的武器系统",
+      "expected_appids": [
+        730
+      ],
+      "retrieved_appids": [
+        730,
+        730,
+        730
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 1,
+      "query": "Dota 2 英雄介绍",
+      "expected_appids": [
+        570
+      ],
+      "retrieved_appids": [
+        570,
+        570,
+        570
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 2,
+      "query": "黑神话悟空战斗系统怎么样",
+      "expected_appids": [
+        2358720
+      ],
+      "retrieved_appids": [
+        2358720,
+        2358720,
+        2358720
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 3,
+      "query": "Elden Ring boss guide",
+      "expected_appids": [
+        1245620
+      ],
+      "retrieved_appids": [
+        1245620
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 4,
+      "query": "CS2 ranking and matchmaking",
+      "expected_appids": [
+        730
+      ],
+      "retrieved_appids": [
+        570,
+        730
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 0.5
+    },
+    {
+      "index": 5,
+      "query": "Dota 2 patch notes latest",
+      "expected_appids": [
+        570
+      ],
+      "retrieved_appids": [
+        730,
+        570,
+        730
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 0.5
+    },
+    {
+      "index": 6,
+      "query": "黑神话悟空配置要求",
+      "expected_appids": [
+        2358720
+      ],
+      "retrieved_appids": [
+        2358720,
+        2358720,
+        2358720
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 7,
+      "query": "Steam Deck compatibility",
+      "expected_appids": [],
+      "retrieved_appids": [
+        570
+      ],
+      "recall_at_3": null,
+      "mrr": null
+    },
+    {
+      "index": 8,
+      "query": "CS2 创意工坊地图",
+      "expected_appids": [
+        730
+      ],
+      "retrieved_appids": [
+        730,
+        730,
+        730
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 9,
+      "query": "FPS 游戏推荐",
+      "expected_appids": [],
+      "retrieved_appids": [
+        730,
+        570,
+        570
+      ],
+      "recall_at_3": null,
+      "mrr": null
+    },
+    {
+      "index": 10,
+      "query": "Dota 2 新手入门指南",
+      "expected_appids": [
+        570
+      ],
+      "retrieved_appids": [
+        570,
+        570,
+        570
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 11,
+      "query": "Black Myth Wukong review",
+      "expected_appids": [
+        2358720
+      ],
+      "retrieved_appids": [
+        730,
+        730,
+        2358720
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 0.3333
+    },
+    {
+      "index": 12,
+      "query": "CS2 smokes and grenades",
+      "expected_appids": [
+        730
+      ],
+      "retrieved_appids": [
+        730,
+        570,
+        730
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 13,
+      "query": "Elden Ring DLC",
+      "expected_appids": [
+        1245620
+      ],
+      "retrieved_appids": [
+        1245620,
+        1245620,
+        730
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 14,
+      "query": "多人联机游戏推荐",
+      "expected_appids": [],
+      "retrieved_appids": [
+        570,
+        730,
+        730
+      ],
+      "recall_at_3": null,
+      "mrr": null
+    },
+    {
+      "index": 15,
+      "query": "CS2 更新日志",
+      "expected_appids": [
+        730
+      ],
+      "retrieved_appids": [
+        730,
+        730,
+        730
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 16,
+      "query": "Dota 2 tournament meta",
+      "expected_appids": [
+        570
+      ],
+      "retrieved_appids": [
+        570,
+        2358720
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 17,
+      "query": "游戏引擎技术分析",
+      "expected_appids": [],
+      "retrieved_appids": [
+        570,
+        2358720,
+        2358720
+      ],
+      "recall_at_3": null,
+      "mrr": null
+    },
+    {
+      "index": 18,
+      "query": "CS2 pro settings config",
+      "expected_appids": [
+        730
+      ],
+      "retrieved_appids": [
+        730
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "index": 19,
+      "query": "黑神话悟空剧情解析",
+      "expected_appids": [
+        2358720
+      ],
+      "retrieved_appids": [
+        2358720,
+        2358720,
+        2358720
+      ],
+      "recall_at_3": 1.0,
+      "mrr": 1.0
+    }
+  ]
+}

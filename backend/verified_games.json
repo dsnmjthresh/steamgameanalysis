@@ -1,0 +1,2360 @@
+[
+  {
+    "appid": 227300,
+    "name": "Euro Truck Simulator 2",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 8800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 765418,
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "developers": [
+      "SCS Software"
+    ],
+    "publishers": [
+      "SCS Software"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1773641450"
+  },
+  {
+    "appid": 236850,
+    "name": "Europa Universalis IV",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 21800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 95131,
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Paradox Development Studio",
+      "Paradox Tinto"
+    ],
+    "publishers": [
+      "Paradox Interactive"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236850/header.jpg?t=1778249292"
+  },
+  {
+    "appid": 239140,
+    "name": "Dying Light",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 9800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 372071,
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "developers": [
+      "Techland"
+    ],
+    "publishers": [
+      "Techland"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/9d1b810b85ae46a0acbdfddf583ccbb81271183e/header.jpg?t=1779191279"
+  },
+  {
+    "appid": 251570,
+    "name": "7 Days to Die",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 15200,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 272766,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "The Fun Pimps"
+    ],
+    "publishers": [
+      "The Fun Pimps Entertainment LLC"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1776457619"
+  },
+  {
+    "appid": 252490,
+    "name": "Rust",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 13800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 1138899,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "developers": [
+      "Facepunch Studios"
+    ],
+    "publishers": [
+      "Facepunch Studios"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1778597738"
+  },
+  {
+    "appid": 255710,
+    "name": "Cities: Skylines",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 13800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 217528,
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Colossal Order"
+    ],
+    "publishers": [
+      "Paradox Interactive"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/header.jpg?t=1777568415"
+  },
+  {
+    "appid": 268910,
+    "name": "Cuphead",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 6800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 188406,
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "developers": [
+      "Studio MDHR Entertainment Inc."
+    ],
+    "publishers": [
+      "Studio MDHR Entertainment Inc."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/header.jpg?t=1709068852"
+  },
+  {
+    "appid": 271590,
+    "name": "Grand Theft Auto V Legacy",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 1879831,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Rockstar North"
+    ],
+    "publishers": [
+      "Rockstar Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1765387725"
+  },
+  {
+    "appid": 275850,
+    "name": "No Man's Sky",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 17500,
+    "currency": "CNY",
+    "discount_percent": 60,
+    "recommendations_total": 306912,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Hello Games"
+    ],
+    "publishers": [
+      "Hello Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/dd8237b8ab283a8225a6ba3fc0dee7e1b135cbee/header_alt_assets_25.jpg?t=1779908213"
+  },
+  {
+    "appid": 281990,
+    "name": "Stellaris",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 19800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 140748,
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Paradox Development Studio"
+    ],
+    "publishers": [
+      "Paradox Interactive"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/281990/header.jpg?t=1779090735"
+  },
+  {
+    "appid": 289070,
+    "name": "Sid Meier’s Civilization® VI",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 22000,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 272423,
+    "genres": [
+      "Strategy"
+    ],
+    "developers": [
+      "Firaxis Games",
+      "Aspyr (Mac)",
+      "Aspyr (Linux)"
+    ],
+    "publishers": [
+      "2K",
+      "Aspyr (Mac)",
+      "Aspyr (Linux)"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg?t=1740607040"
+  },
+  {
+    "appid": 292030,
+    "name": "The Witcher 3: Wild Hunt",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 14900,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 816523,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "CD PROJEKT RED"
+    ],
+    "publishers": [
+      "CD PROJEKT RED"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ad9240e088f953a84aee814034c50a6a92bf4516/header.jpg?t=1768303991"
+  },
+  {
+    "appid": 294100,
+    "name": "RimWorld",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 12800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 203357,
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Ludeon Studios"
+    ],
+    "publishers": [
+      "Ludeon Studios"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/76e0613b8197327299d5dbabb0a7fd7828a689a2/header.jpg?t=1779909293"
+  },
+  {
+    "appid": 304930,
+    "name": "Unturned",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 7515,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Indie",
+      "Free To Play"
+    ],
+    "developers": [
+      "Smartly Dressed Games"
+    ],
+    "publishers": [
+      "Smartly Dressed Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304930/header.jpg?t=1777564986"
+  },
+  {
+    "appid": 306130,
+    "name": "The Elder Scrolls® Online",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 8300,
+    "currency": "CNY",
+    "discount_percent": 75,
+    "recommendations_total": 133065,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "developers": [
+      "ZeniMax Online Studios"
+    ],
+    "publishers": [
+      "Bethesda Softworks"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/306130/ec07d0bdeb484c72a88f6c4427871736d091c3fc/header.jpg?t=1779374516"
+  },
+  {
+    "appid": 322330,
+    "name": "Don't Starve Together",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 2400,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 367038,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Klei Entertainment"
+    ],
+    "publishers": [
+      "Klei Entertainment"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/14496a5926156fbaf8b026f8224ba8c34e9b5096/header_alt_assets_49.jpg?t=1777913126"
+  },
+  {
+    "appid": 346110,
+    "name": "ARK: Survival Evolved",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 5800,
+    "currency": "CNY",
+    "discount_percent": 34,
+    "recommendations_total": 578890,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "developers": [
+      "Studio Wildcard",
+      "Instinct Games",
+      "Efecto Studios",
+      "Virtual Basement LLC"
+    ],
+    "publishers": [
+      "Studio Wildcard",
+      "Snail Games USA"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/header.jpg?t=1765677889"
+  },
+  {
+    "appid": 359550,
+    "name": "Tom Clancy's Rainbow Six Siege",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 1242341,
+    "genres": [
+      "Action",
+      "Free To Play"
+    ],
+    "developers": [
+      "Ubisoft Montreal"
+    ],
+    "publishers": [
+      "Ubisoft"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/ac4f6daf0d8afee2754e9964077a9a7d5bdb8ab8/header_alt_assets_22.jpg?t=1779889357"
+  },
+  {
+    "appid": 367520,
+    "name": "Hollow Knight",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 5800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 486539,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "developers": [
+      "Team Cherry"
+    ],
+    "publishers": [
+      "Team Cherry"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/3c3489495136b26b34f8a9543c7f5645b99d388c/header.jpg?t=1776125684"
+  },
+  {
+    "appid": 374320,
+    "name": "DARK SOULS™ III",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 26800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 275760,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "FromSoftware, Inc."
+    ],
+    "publishers": [
+      "FromSoftware, Inc.",
+      "Bandai Namco Entertainment"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/374320/header.jpg?t=1748630784"
+  },
+  {
+    "appid": 376210,
+    "name": "The Isle",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 7600,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 103948,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Massively Multiplayer",
+      "Simulation",
+      "Early Access"
+    ],
+    "developers": [
+      "Afterthought LLC"
+    ],
+    "publishers": [
+      "Afterthought LLC"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/376210/header.jpg?t=1653237914"
+  },
+  {
+    "appid": 381210,
+    "name": "Dead by Daylight",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 9375,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 659672,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Behaviour Interactive Inc."
+    ],
+    "publishers": [
+      "Behaviour Interactive Inc."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/8512297f0f02ec3e592f45b21779f61624941964/header_alt_assets_6.jpg?t=1778880603"
+  },
+  {
+    "appid": 383150,
+    "name": "Dead Island Definitive Edition",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 7400,
+    "currency": "CNY",
+    "discount_percent": 90,
+    "recommendations_total": 23444,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Techland"
+    ],
+    "publishers": [
+      "Deep Silver"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/383150/header.jpg?t=1725361899"
+  },
+  {
+    "appid": 389730,
+    "name": "TEKKEN 7",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 39800,
+    "currency": "CNY",
+    "discount_percent": 85,
+    "recommendations_total": 67455,
+    "genres": [
+      "Action",
+      "Sports"
+    ],
+    "developers": [
+      "BANDAI NAMCO Studios Inc."
+    ],
+    "publishers": [
+      "BANDAI NAMCO Entertainment"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/389730/header.jpg?t=1765812753"
+  },
+  {
+    "appid": 413150,
+    "name": "Stardew Valley",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 4800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 867779,
+    "genres": [
+      "Indie",
+      "RPG",
+      "Simulation"
+    ],
+    "developers": [
+      "ConcernedApe"
+    ],
+    "publishers": [
+      "ConcernedApe"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1754692865"
+  },
+  {
+    "appid": 417290,
+    "name": "Ghost of a Tale",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 7600,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 4134,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "SeithCG"
+    ],
+    "publishers": [
+      "SeithCG"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/417290/header.jpg?t=1667033370"
+  },
+  {
+    "appid": 427520,
+    "name": "Factorio",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 13000,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 191476,
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Wube Software LTD."
+    ],
+    "publishers": [
+      "Wube Software LTD."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/header.jpg?t=1763986204"
+  },
+  {
+    "appid": 431960,
+    "name": "Wallpaper Engine",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 2290,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 913857,
+    "genres": [
+      "Casual",
+      "Indie",
+      "Animation & Modeling",
+      "Design & Illustration",
+      "Photo Editing",
+      "Utilities"
+    ],
+    "developers": [
+      "Wallpaper Engine Team"
+    ],
+    "publishers": [
+      "Wallpaper Engine Team"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/header.jpg?t=1779452230"
+  },
+  {
+    "appid": 433850,
+    "name": "Z1 Battle Royale",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 143092,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Free To Play",
+      "Massively Multiplayer"
+    ],
+    "developers": [
+      "Daybreak Game Company"
+    ],
+    "publishers": [
+      "Daybreak Game Company"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/433850/header.jpg?t=1579626820"
+  },
+  {
+    "appid": 440900,
+    "name": "Conan Exiles Enhanced",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 12900,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 78139,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Funcom",
+      "Inflexion Games"
+    ],
+    "publishers": [
+      "Funcom"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440900/b49106f92fc749db3710622258d00eb9576ecaff/header_alt_assets_7.jpg?t=1778144715"
+  },
+  {
+    "appid": 489830,
+    "name": "The Elder Scrolls V: Skyrim Special Edition",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 16500,
+    "currency": "CNY",
+    "discount_percent": 75,
+    "recommendations_total": 211300,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "Bethesda Game Studios"
+    ],
+    "publishers": [
+      "Bethesda Softworks"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1753715778"
+  },
+  {
+    "appid": 493340,
+    "name": "Planet Coaster",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 12200,
+    "currency": "CNY",
+    "discount_percent": 75,
+    "recommendations_total": 59446,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Frontier Developments",
+      "Aspyr (Mac)"
+    ],
+    "publishers": [
+      "Frontier Developments",
+      "Aspyr (Mac)"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/493340/header.jpg?t=1725377481"
+  },
+  {
+    "appid": 534380,
+    "name": "Dying Light 2 Stay Human: Reloaded Edition",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 19800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 160089,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Techland"
+    ],
+    "publishers": [
+      "Techland"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/534380/header.jpg?t=1772550031"
+  },
+  {
+    "appid": 548430,
+    "name": "Deep Rock Galactic",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 10800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 300212,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Ghost Ship Games"
+    ],
+    "publishers": [
+      "Coffee Stain Publishing"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/header.jpg?t=1775555380"
+  },
+  {
+    "appid": 552520,
+    "name": "Far Cry® 5",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 29800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 170124,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Ubisoft Montreal",
+      "Red Storm",
+      "Ubisoft Shanghai",
+      "Ubisoft Toronto",
+      "Ubisoft Kiev"
+    ],
+    "publishers": [
+      "Ubisoft"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552520/header.jpg?t=1762190084"
+  },
+  {
+    "appid": 578080,
+    "name": "PUBG: BATTLEGROUNDS",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 1760294,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "Free To Play"
+    ],
+    "developers": [
+      "PUBG Corporation"
+    ],
+    "publishers": [
+      "KRAFTON, Inc."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1778634253"
+  },
+  {
+    "appid": 582010,
+    "name": "Monster Hunter: World",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 14800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 315483,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582010/header.jpg?t=1773328926"
+  },
+  {
+    "appid": 594570,
+    "name": "Total War: WARHAMMER II",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 26800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 87774,
+    "genres": [
+      "Action",
+      "Strategy"
+    ],
+    "developers": [
+      "CREATIVE ASSEMBLY",
+      "Feral Interactive (Mac)",
+      "Feral Interactive (Linux)"
+    ],
+    "publishers": [
+      "SEGA",
+      "Feral Interactive (Mac)",
+      "Feral Interactive (Linux)"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594570/header.jpg?t=1779479429"
+  },
+  {
+    "appid": 632470,
+    "name": "Disco Elysium - The Final Cut",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 13600,
+    "currency": "CNY",
+    "discount_percent": 75,
+    "recommendations_total": 114691,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "ZA/UM"
+    ],
+    "publishers": [
+      "ZA/UM"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/header.jpg?t=1779877985"
+  },
+  {
+    "appid": 646570,
+    "name": "Slay the Spire",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 8800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 189092,
+    "genres": [
+      "Indie",
+      "Strategy"
+    ],
+    "developers": [
+      "Mega Crit"
+    ],
+    "publishers": [
+      "Mega Crit"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg?t=1774015376"
+  },
+  {
+    "appid": 648350,
+    "name": "Jurassic World Evolution",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 12000,
+    "currency": "CNY",
+    "discount_percent": 75,
+    "recommendations_total": 48116,
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Frontier Developments"
+    ],
+    "publishers": [
+      "Frontier Developments"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648350/header.jpg?t=1750957705"
+  },
+  {
+    "appid": 703080,
+    "name": "Planet Zoo",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 18000,
+    "currency": "CNY",
+    "discount_percent": 70,
+    "recommendations_total": 78624,
+    "genres": [
+      "Casual",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Frontier Developments"
+    ],
+    "publishers": [
+      "Frontier Developments"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/703080/header.jpg?t=1765896213"
+  },
+  {
+    "appid": 739630,
+    "name": "Phasmophobia",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 6800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 676282,
+    "genres": [
+      "Action",
+      "Indie",
+      "Early Access"
+    ],
+    "developers": [
+      "Kinetic Games"
+    ],
+    "publishers": [
+      "Kinetic Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/0a424398a10445bbb922b45771dab7118fe139d2/header_alt_assets_10.jpg?t=1778659672"
+  },
+  {
+    "appid": 745940,
+    "name": "Quanect",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 600,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 0,
+    "genres": [
+      "Adventure",
+      "Indie",
+      "Simulation"
+    ],
+    "developers": [
+      "Sergey Chernenko"
+    ],
+    "publishers": [
+      "Sergey Chernenko"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/745940/header.jpg?t=1607503681"
+  },
+  {
+    "appid": 872790,
+    "name": "Football Manager 2019",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 7388,
+    "genres": [
+      "Simulation",
+      "Sports"
+    ],
+    "developers": [
+      "Sports Interactive"
+    ],
+    "publishers": [
+      "SEGA"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/872790/header.jpg?t=1671725314"
+  },
+  {
+    "appid": 892970,
+    "name": "Valheim",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 7400,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 452647,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Early Access"
+    ],
+    "developers": [
+      "Iron Gate AB"
+    ],
+    "publishers": [
+      "Coffee Stain Publishing"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/de0bdcf6c008c508a79d8e75eb91fc67f4bebd5d/header.jpg?t=1765967243"
+  },
+  {
+    "appid": 945360,
+    "name": "Among Us",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 2500,
+    "currency": "CNY",
+    "discount_percent": 40,
+    "recommendations_total": 643269,
+    "genres": [
+      "Casual"
+    ],
+    "developers": [
+      "Innersloth"
+    ],
+    "publishers": [
+      "Innersloth"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg?t=1757444903"
+  },
+  {
+    "appid": 949230,
+    "name": "Cities: Skylines II",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 19800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 61389,
+    "genres": [
+      "Simulation"
+    ],
+    "developers": [
+      "Iceflake Studios",
+      "Colossal Order"
+    ],
+    "publishers": [
+      "Paradox Interactive"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/949230/header.jpg?t=1779837128"
+  },
+  {
+    "appid": 990080,
+    "name": "Hogwarts Legacy",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 38400,
+    "currency": "CNY",
+    "discount_percent": 85,
+    "recommendations_total": 269279,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Avalanche Software"
+    ],
+    "publishers": [
+      "Warner Bros. Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/a3cdc6f40d97df8ac993679c2dd1edeb5222421e/header.jpg?t=1778797474"
+  },
+  {
+    "appid": 999220,
+    "name": "Amnesia: Rebirth",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 10800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 7805,
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "developers": [
+      "Frictional Games"
+    ],
+    "publishers": [
+      "Frictional Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/999220/header.jpg?t=1752056337"
+  },
+  {
+    "appid": 1063730,
+    "name": "New World: Aeternum",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 253851,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "developers": [
+      "Amazon Game Studios"
+    ],
+    "publishers": [
+      "Amazon Game Studios"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1063730/bd98bbdc4fdf388d07afa6ec8d781cb863bccfb0/header.jpg?t=1768500124"
+  },
+  {
+    "appid": 1085660,
+    "name": "Destiny 2",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 135603,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Free To Play"
+    ],
+    "developers": [
+      "Bungie"
+    ],
+    "publishers": [
+      "Bungie"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/header.jpg?t=1765904462"
+  },
+  {
+    "appid": 1086940,
+    "name": "Baldur's Gate 3",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 29800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 740392,
+    "genres": [
+      "Adventure",
+      "RPG",
+      "Strategy"
+    ],
+    "developers": [
+      "Larian Studios"
+    ],
+    "publishers": [
+      "Larian Studios"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1777363040"
+  },
+  {
+    "appid": 1091500,
+    "name": "Cyberpunk 2077",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 29800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 852373,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "CD PROJEKT RED"
+    ],
+    "publishers": [
+      "CD PROJEKT RED"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/e9047d8ec47ae3d94bb8b464fb0fc9e9972b4ac7/header.jpg?t=1769690377"
+  },
+  {
+    "appid": 1145350,
+    "name": "Hades II",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 10800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 110639,
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "Supergiant Games"
+    ],
+    "publishers": [
+      "Supergiant Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265"
+  },
+  {
+    "appid": 1145360,
+    "name": "Hades",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 9200,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 281211,
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "Supergiant Games"
+    ],
+    "publishers": [
+      "Supergiant Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg?t=1758127023"
+  },
+  {
+    "appid": 1151640,
+    "name": "Horizon Zero Dawn™ Complete Edition",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 95428,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Guerrilla"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151640/header.jpg?t=1776465788"
+  },
+  {
+    "appid": 1158850,
+    "name": "The Great Ace Attorney Chronicles",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 4980,
+    "genres": [
+      "Adventure"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158850/header.jpg?t=1768866214"
+  },
+  {
+    "appid": 1172380,
+    "name": "STAR WARS Jedi: Fallen Order™",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 19800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 150707,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Respawn Entertainment"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172380/header.jpg?t=1777393604"
+  },
+  {
+    "appid": 1172470,
+    "name": "Apex Legends™",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 1578,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Free To Play"
+    ],
+    "developers": [
+      "Respawn"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/0bd74245b869287a2dc7f682e6013f7ed08d98e3/header.jpg?t=1778502442"
+  },
+  {
+    "appid": 1174180,
+    "name": "Red Dead Redemption 2",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 27900,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 812026,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Rockstar Games"
+    ],
+    "publishers": [
+      "Rockstar Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961"
+  },
+  {
+    "appid": 1190460,
+    "name": "DEATH STRANDING",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 50832,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "KOJIMA PRODUCTIONS"
+    ],
+    "publishers": [
+      "505 Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1190460/header.jpg?t=1766014863"
+  },
+  {
+    "appid": 1203220,
+    "name": "NARAKA: BLADEPOINT",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 197676,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "Free To Play"
+    ],
+    "developers": [
+      "24 Entertainment"
+    ],
+    "publishers": [
+      "NetEase Games "
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203220/54ba28138d3123da5e078bee8714340d565cb436/header.jpg?t=1778037276"
+  },
+  {
+    "appid": 1222670,
+    "name": "The Sims™ 4",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 83046,
+    "genres": [
+      "Adventure",
+      "Casual",
+      "Simulation",
+      "Free To Play"
+    ],
+    "developers": [
+      "Maxis"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222670/header.jpg?t=1778778231"
+  },
+  {
+    "appid": 1238840,
+    "name": "Battlefield™ 1",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 19800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 193799,
+    "genres": [
+      "Action",
+      "Massively Multiplayer"
+    ],
+    "developers": [
+      "DICE"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238840/header.jpg?t=1777324289"
+  },
+  {
+    "appid": 1239520,
+    "name": "Madden NFL 21",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 3557,
+    "genres": [
+      "Simulation",
+      "Sports",
+      "Strategy"
+    ],
+    "developers": [
+      "Electronic Arts"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1239520/header.jpg?t=1678291325"
+  },
+  {
+    "appid": 1245620,
+    "name": "ELDEN RING",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 29800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 818467,
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "developers": [
+      "FromSoftware, Inc."
+    ],
+    "publishers": [
+      "FromSoftware, Inc.",
+      "Bandai Namco Entertainment"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1767883716"
+  },
+  {
+    "appid": 1248130,
+    "name": "Farming Simulator 22",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 12400,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 68189,
+    "genres": [
+      "Simulation"
+    ],
+    "developers": [
+      "Giants Software"
+    ],
+    "publishers": [
+      "Giants Software"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1248130/7ff56320788fa4b1f46ac9a62ff955d3ef3f109c/header.jpg?t=1765792398"
+  },
+  {
+    "appid": 1250410,
+    "name": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 29800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 68818,
+    "genres": [
+      "Simulation"
+    ],
+    "developers": [
+      "Asobo Studio"
+    ],
+    "publishers": [
+      "Xbox Game Studios"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1250410/header.jpg?t=1777409972"
+  },
+  {
+    "appid": 1262540,
+    "name": "Need for Speed™",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 15800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 24006,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Racing",
+      "Simulation"
+    ],
+    "developers": [
+      "Ghost Games"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1262540/header.jpg?t=1777394657"
+  },
+  {
+    "appid": 1286830,
+    "name": "STAR WARS™: The Old Republic™",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 458,
+    "genres": [
+      "Massively Multiplayer",
+      "RPG",
+      "Free To Play"
+    ],
+    "developers": [
+      "Broadsword"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286830/header.jpg?t=1779987630"
+  },
+  {
+    "appid": 1290000,
+    "name": "PowerWash Simulator",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 8800,
+    "currency": "CNY",
+    "discount_percent": 50,
+    "recommendations_total": 50254,
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation"
+    ],
+    "developers": [
+      "FuturLab"
+    ],
+    "publishers": [
+      "FuturLab"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1290000/header.jpg?t=1779974258"
+  },
+  {
+    "appid": 1293830,
+    "name": "Forza Horizon 4",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 277596,
+    "genres": [
+      "Racing"
+    ],
+    "developers": [
+      "Playground Games"
+    ],
+    "publishers": [
+      "Xbox Game Studios"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1293830/header.jpg?t=1734336342"
+  },
+  {
+    "appid": 1326470,
+    "name": "Sons Of The Forest",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 10800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 271259,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Simulation"
+    ],
+    "developers": [
+      "Endnight Games Ltd"
+    ],
+    "publishers": [
+      "Newnight "
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/header.jpg?t=1708624856"
+  },
+  {
+    "appid": 1328350,
+    "name": "Turbo Overkill",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 7600,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 6205,
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "developers": [
+      "Trigger Happy Interactive"
+    ],
+    "publishers": [
+      "Apogee Entertainment"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1328350/header.jpg?t=1758928764"
+  },
+  {
+    "appid": 1364780,
+    "name": "Street Fighter™ 6",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 19800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 46673,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1364780/header.jpg?t=1779953790"
+  },
+  {
+    "appid": 1446780,
+    "name": "MONSTER HUNTER RISE",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 19800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 77364,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1446780/header.jpg?t=1768870444"
+  },
+  {
+    "appid": 1478810,
+    "name": "War Thunder - T-72AV (TURMS-T) Pack",
+    "type": "dlc",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 262,
+    "genres": [
+      "Action",
+      "Massively Multiplayer",
+      "Simulation",
+      "Free To Play"
+    ],
+    "developers": [
+      "Gaijin Entertainment"
+    ],
+    "publishers": [
+      "Gaijin Network Ltd"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1478810/header.jpg?t=1725557591"
+  },
+  {
+    "appid": 1517290,
+    "name": "Battlefield™ 2042",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 24800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 259188,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual"
+    ],
+    "developers": [
+      "DICE"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1517290/header.jpg?t=1777324359"
+  },
+  {
+    "appid": 1551360,
+    "name": "Forza Horizon 5",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 19800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 252813,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Racing",
+      "Simulation",
+      "Sports"
+    ],
+    "developers": [
+      "Playground Games"
+    ],
+    "publishers": [
+      "Xbox Game Studios"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg?t=1746471508"
+  },
+  {
+    "appid": 1593500,
+    "name": "God of War",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 34500,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 125891,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Santa Monica Studio",
+      "Jetpack Interactive"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg?t=1763059412"
+  },
+  {
+    "appid": 1623730,
+    "name": "Palworld",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 10800,
+    "currency": "CNY",
+    "discount_percent": 25,
+    "recommendations_total": 355119,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Early Access"
+    ],
+    "developers": [
+      "Pocketpair"
+    ],
+    "publishers": [
+      "Pocketpair"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/058bd87dc17a7179e07c446aa64d0574ca43ab9d/header.jpg?t=1779864445"
+  },
+  {
+    "appid": 1649240,
+    "name": "Returnal™",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 41400,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 6018,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Housemarque",
+      "Climax Studios"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1649240/header.jpg?t=1750956860"
+  },
+  {
+    "appid": 1659040,
+    "name": "HITMAN World of Assassination",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 10800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 53935,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "IO Interactive A/S"
+    ],
+    "publishers": [
+      "IO Interactive A/S"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659040/c62446d5c95f583a296d7f1b99045a61e2f81dea/header.jpg?t=1780060872"
+  },
+  {
+    "appid": 1687950,
+    "name": "Persona 5 Royal",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 26800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 85614,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "ATLUS"
+    ],
+    "publishers": [
+      "SEGA"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/header.jpg?t=1779145087"
+  },
+  {
+    "appid": 1716740,
+    "name": "Starfield",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 20900,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 113845,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "Bethesda Game Studios"
+    ],
+    "publishers": [
+      "Bethesda Softworks"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1716740/header.jpg?t=1778168061"
+  },
+  {
+    "appid": 1745510,
+    "name": "Lunacid",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 5600,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 9967,
+    "genres": [
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "KIRA LLC"
+    ],
+    "publishers": [
+      "KIRA LLC",
+      "CRITICAL REFLEX"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1745510/header.jpg?t=1777045181"
+  },
+  {
+    "appid": 1781410,
+    "name": "Super Jigsaw Puzzle: Generations - Clocks",
+    "type": "dlc",
+    "is_free": false,
+    "initial_price": 2600,
+    "currency": "CNY",
+    "discount_percent": 85,
+    "recommendations_total": 0,
+    "genres": [
+      "Casual",
+      "Free To Play",
+      "Indie",
+      "Strategy"
+    ],
+    "developers": [
+      "Flat Cat Games"
+    ],
+    "publishers": [
+      "Flat Cat Games"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1781410/header.jpg?t=1638444417"
+  },
+  {
+    "appid": 1794680,
+    "name": "Vampire Survivors",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 2500,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 248719,
+    "genres": [
+      "Action",
+      "Casual",
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "poncle"
+    ],
+    "publishers": [
+      "poncle"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1794680/header.jpg?t=1778864981"
+  },
+  {
+    "appid": 1809700,
+    "name": "Persona 3 Portable",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 12500,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 4594,
+    "genres": [
+      "Adventure",
+      "RPG",
+      "Strategy"
+    ],
+    "developers": [
+      "ATLUS"
+    ],
+    "publishers": [
+      "SEGA"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809700/header.jpg?t=1763530922"
+  },
+  {
+    "appid": 1811260,
+    "name": "EA SPORTS™ FIFA 23",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 123828,
+    "genres": [
+      "Simulation",
+      "Sports"
+    ],
+    "developers": [
+      "EA Canada",
+      "EA Romania"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1811260/header.jpg?t=1750187458"
+  },
+  {
+    "appid": 1823910,
+    "name": "Mondrian Squares",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 600,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 0,
+    "genres": [
+      "Casual",
+      "Indie",
+      "Strategy"
+    ],
+    "developers": [
+      "LH Games Limited"
+    ],
+    "publishers": [
+      "LH Games Limited"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1823910/header.jpg?t=1716898871"
+  },
+  {
+    "appid": 1888160,
+    "name": "ARMORED CORE™ VI FIRES OF RUBICON™",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 29800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 65339,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "FromSoftware, Inc."
+    ],
+    "publishers": [
+      "FromSoftware, Inc.",
+      "Bandai Namco Entertainment Inc."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888160/header.jpg?t=1748630736"
+  },
+  {
+    "appid": 1938090,
+    "name": "Call of Duty®",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 408754,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Treyarch",
+      "Raven Software",
+      "Beenox",
+      "High Moon Studios",
+      "Sledgehammer Games",
+      "Infinity Ward",
+      "Activision Shanghai",
+      "Demonware"
+    ],
+    "publishers": [
+      "Activision"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/23af6cf41e2d09620caa07700a4cb3288dbcbaa8/header.jpg?t=1780070700"
+  },
+  {
+    "appid": 1940340,
+    "name": "Darkest Dungeon® II",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 13800,
+    "currency": "CNY",
+    "discount_percent": 75,
+    "recommendations_total": 23387,
+    "genres": [
+      "Indie",
+      "RPG",
+      "Strategy"
+    ],
+    "developers": [
+      "Red Hook Studios"
+    ],
+    "publishers": [
+      "Red Hook Studios"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1940340/header.jpg?t=1759351183"
+  },
+  {
+    "appid": 1948980,
+    "name": "Hero's Adventure: Road to Passion",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 6900,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 22353,
+    "genres": [
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation"
+    ],
+    "developers": [
+      "半瓶醋工作室（Half Amateur Studio）"
+    ],
+    "publishers": [
+      "XD"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1948980/3b4c99950f5c84c72a200139b6f10c8ddd08cfa0/header.jpg?t=1778838196"
+  },
+  {
+    "appid": 1966720,
+    "name": "Lethal Company",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 4200,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 409480,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Early Access"
+    ],
+    "developers": [
+      "Zeekerss"
+    ],
+    "publishers": [
+      "Zeekerss"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg?t=1775380053"
+  },
+  {
+    "appid": 1979980,
+    "name": "Ultra Sweeper",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 0,
+    "genres": [
+      "Casual",
+      "Free To Play"
+    ],
+    "developers": [
+      "thepowerlies"
+    ],
+    "publishers": [
+      "thepowerlies"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1979980/header.jpg?t=1733529045"
+  },
+  {
+    "appid": 2000950,
+    "name": "Call of Duty®: Modern Warfare®",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 39900,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 39898,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Infinity Ward",
+      "Beenox",
+      "High Moon Studios",
+      "Raven Software"
+    ],
+    "publishers": [
+      "Activision"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2000950/header.jpg?t=1778886798"
+  },
+  {
+    "appid": 2050650,
+    "name": "Resident Evil 4",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 19800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 166898,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922"
+  },
+  {
+    "appid": 2208920,
+    "name": "Assassin's Creed Valhalla",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 24800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 39178,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Ubisoft Montreal"
+    ],
+    "publishers": [
+      "Ubisoft"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/header.jpg?t=1754572990"
+  },
+  {
+    "appid": 2215430,
+    "name": "Ghost of Tsushima DIRECTOR'S CUT",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 39800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 61226,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Sucker Punch Productions",
+      "Nixxes Software"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1763409398"
+  },
+  {
+    "appid": 2239550,
+    "name": "Watch Dogs®: Legion",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 29800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 11434,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Ubisoft Toronto"
+    ],
+    "publishers": [
+      "Ubisoft"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2239550/header.jpg?t=1747655055"
+  },
+  {
+    "appid": 2300320,
+    "name": "Farming Simulator 25",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 12600,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 35305,
+    "genres": [
+      "Simulation"
+    ],
+    "developers": [
+      "GIANTS Software"
+    ],
+    "publishers": [
+      "GIANTS Software"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300320/c2a205133d23cd24faf3c152d972a1d0177661b8/header.jpg?t=1775646645"
+  },
+  {
+    "appid": 2357570,
+    "name": "Overwatch®",
+    "type": "game",
+    "is_free": true,
+    "initial_price": 0,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 268,
+    "genres": [
+      "Action",
+      "Free To Play"
+    ],
+    "developers": [
+      "Blizzard Entertainment, Inc."
+    ],
+    "publishers": [
+      "Blizzard Entertainment, Inc."
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/1f84e73b8095ab9f40b1bc2c81845330979afc09/header_alt_assets_20.jpg?t=1778610036"
+  },
+  {
+    "appid": 2358720,
+    "name": "Black Myth: Wukong",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 26800,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 872712,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Game Science"
+    ],
+    "publishers": [
+      "Game Science"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg?t=1760601605"
+  },
+  {
+    "appid": 2420110,
+    "name": "Horizon Forbidden West™ Complete Edition",
+    "type": "game",
+    "is_free": false,
+    "initial_price": 41400,
+    "currency": "CNY",
+    "discount_percent": 0,
+    "recommendations_total": 19309,
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "developers": [
+      "Guerrilla",
+      "Nixxes Software"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ],
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2420110/header.jpg?t=1776465869"
+  }
+]

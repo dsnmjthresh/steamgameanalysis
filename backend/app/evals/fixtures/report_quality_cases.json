@@ -1,0 +1,561 @@
+{
+  "meta": {
+    "version": "1.1.0",
+    "description": "Agent report quality eval cases — mock answers with expected quality dimensions",
+    "total_cases": 22,
+    "task_type_distribution": {
+      "single_game": 5,
+      "game_comparison": 4,
+      "history_trend": 4,
+      "review_analysis": 3,
+      "web_sentiment": 3,
+      "knowledge_qa": 3
+    }
+  },
+  "cases": [
+    {
+      "case_id": "rq_001",
+      "task_type": "single_game",
+      "quality_label": "excellent",
+      "query": "CS2 现在有多少玩家在线？",
+      "expected_topics": [
+        "当前在线|玩家|player count|在线人数",
+        "appid|730|CS2",
+        "趋势|peak|峰值|trend",
+        "数据来源|Steam|API|来源"
+      ],
+      "required_evidence_types": ["player_count", "steam_api"],
+      "forbidden_claims": [
+        "肯定还会继续增长",
+        "绝对是",
+        "所有玩家都",
+        "毫无疑问",
+        "永远都是"
+      ],
+      "expected_uncertainty_terms": [
+        "波动",
+        "可能",
+        "仅供参考",
+        "建议"
+      ],
+      "mock_answer": "## CS2 当前在线玩家数据\n\n根据 Steam API 实时数据（来源：https://steamcommunity.com/app/730），截至采集时刻，**CS2 (appid 730)** 当前在线玩家约为 **850,000-920,000** 人。\n\n### 关键指标\n- **当前在线**：约 880,000 人\n- **今日峰值**：约 1,120,000 人\n- **历史峰值（24h）**：1,150,000 人\n\n### 说明\n基于当前采样数据，在线人数可能存在正常波动。实时数据会随时段、地区活动等因素变化，以上数字仅供参考。Steam 官方 API 每分钟更新一次，建议多次采集以获得更稳定趋势。"
+    },
+    {
+      "case_id": "rq_002",
+      "task_type": "single_game",
+      "quality_label": "good",
+      "query": "Elden Ring 的价格和打折信息",
+      "expected_topics": [
+        "当前价格|price|价格|售价",
+        "折扣|discount|打折|优惠",
+        "appid|1245620|Elden Ring",
+        "历史最低|史低|历史价格"
+      ],
+      "required_evidence_types": ["price_data", "steam_api"],
+      "forbidden_claims": [
+        "肯定还会再降",
+        "绝对不会打折",
+        "保证最低价",
+        "所有区都是"
+      ],
+      "expected_uncertainty_terms": [
+        "参考",
+        "可能",
+        "建议",
+        "实际价格"
+      ],
+      "mock_answer": "## Elden Ring 价格信息\n\n**Elden Ring (appid 1245620)** 当前 Steam 国区售价（来源：https://store.steampowered.com/app/1245620）：\n\n| 版本 | 原价 | 当前售价 | 折扣 |\n|------|------|----------|------|\n| 标准版 | ¥298 | ¥298 | 无折扣 |\n| 豪华版 | ¥398 | ¥398 | 无折扣 |\n\n### 历史价格参考\n- 史低价格：¥178.80（-40%，2024年夏季促销）\n- 上次打折：2024年冬促，-30%\n\n根据当前 Steam 商店数据，目前未处于打折期。参考往年促销规律，大型季节性促销期间可能会有折扣。实际价格以 Steam 商店页面为准，建议购买前核实。"
+    },
+    {
+      "case_id": "rq_003",
+      "task_type": "single_game",
+      "quality_label": "adequate",
+      "query": "Dota 2 的游戏详情和评价如何？",
+      "expected_topics": [
+        "游戏类型|MOBA|类型|genre",
+        "玩家评价|review|评价|好评",
+        "appid|570|Dota 2",
+        "免费|free|价格|付费",
+        "在线人数|玩家数|player"
+      ],
+      "required_evidence_types": ["steam_api", "review_sample"],
+      "forbidden_claims": [
+        "所有玩家都喜欢",
+        "绝对是最好的MOBA",
+        "永远不会衰落"
+      ],
+      "expected_uncertainty_terms": [
+        "大致",
+        "通常",
+        "参考"
+      ],
+      "mock_answer": "## Dota 2 游戏详情\n\nDota 2 (appid 570) 是 Valve 开发的免费 MOBA 游戏（参考：https://store.steampowered.com/app/570）。\n\n玩家评价方面，Steam 上显示总体评价为「特别好评」。游戏类型为多人在线战术竞技，拥有超过 120 个英雄。\n\n游戏完全免费，通过饰品和内购盈利。日常在线玩家通常在 40-70 万之间，大致保持 Steam 平台最活跃游戏之一的地位。"
+    },
+    {
+      "case_id": "rq_004",
+      "task_type": "single_game",
+      "quality_label": "marginal",
+      "query": "黑神话悟空的最新消息",
+      "expected_topics": [
+        "更新|update|patch|补丁",
+        "appid|2358720|黑神话|Wukong",
+        "玩家|player|社区|community",
+        "日期|时间|最近|latest"
+      ],
+      "required_evidence_types": ["steam_api", "web_source"],
+      "forbidden_claims": [
+        "开发组肯定会",
+        "销量一定",
+        "明年必然"
+      ],
+      "expected_uncertainty_terms": [
+        "可能",
+        "预计",
+        "尚未确认"
+      ],
+      "mock_answer": "## 黑神话悟空最新消息\n\n查阅了 appid 2358720 的 Steam 页面（https://store.steampowered.com/app/2358720），黑神话悟空最近挺火的。开发组肯定会继续出DLC。销量一定突破3000万了。\n\n游戏画面很好，玩家都在夸。明年必然会有大型更新，但具体计划尚未确认。"
+    },
+    {
+      "case_id": "rq_005",
+      "task_type": "single_game",
+      "quality_label": "poor",
+      "query": "730 这个游戏怎么样？",
+      "expected_topics": [
+        "游戏名|CS2|Counter|名称",
+        "类型|射击|FPS|genre",
+        "评价|review|好评|rating",
+        "价格|免费|price"
+      ],
+      "required_evidence_types": ["steam_api"],
+      "forbidden_claims": [
+        "绝对是世界上最好玩的游戏",
+        "每个人都应该玩",
+        "永远不会过时",
+        "完美无缺"
+      ],
+      "expected_uncertainty_terms": [
+        "个人认为",
+        "可能",
+        "取决于"
+      ],
+      "mock_answer": "730 这个游戏就是CS2，绝对是最好的FPS射击游戏。评价很高，画质完美无缺，玩法天下第一。每个人都应该玩。"
+    },
+    {
+      "case_id": "rq_006",
+      "task_type": "game_comparison",
+      "quality_label": "excellent",
+      "query": "对比 CS2 和 Dota 2 的在线人数",
+      "expected_topics": [
+        "CS2|730|Counter",
+        "Dota 2|570",
+        "在线人数|player count|在线|current",
+        "峰值|peak|最高",
+        "趋势对比|comparison|对比|差异",
+        "数据来源|Steam|API"
+      ],
+      "required_evidence_types": ["player_count", "steam_api"],
+      "forbidden_claims": [
+        "CS2永远比Dota2人多",
+        "Dota2绝对不如CS2",
+        "这个趋势一定会持续"
+      ],
+      "expected_uncertainty_terms": [
+        "波动",
+        "可能",
+        "仅供参考",
+        "快照"
+      ],
+      "mock_answer": "## CS2 vs Dota 2 在线人数对比\n\n基于 Steam API 实时数据（来源：https://steamcharts.com）：\n\n| 指标 | CS2 (appid 730) | Dota 2 (appid 570) |\n|------|-----------------|---------------------|\n| 当前在线 | ~880,000 | ~450,000 |\n| 今日峰值 | ~1,120,000 | ~620,000 |\n| 近期均值 | ~950,000 | ~500,000 |\n\n### 分析\nCS2 当前在线人数约为 Dota 2 的 1.9 倍。但需注意：\n- 两款游戏在不同时段表现不同，CS2 在欧洲时段峰值更高\n- Dota 2 在东南亚和独联体地区有更稳定的玩家基础\n- 以上数据基于采集时刻的快照，存在正常日内波动\n\n数据仅供参考，实时排名可能随时变化。"
+    },
+    {
+      "case_id": "rq_007",
+      "task_type": "game_comparison",
+      "quality_label": "good",
+      "query": "Elden Ring 和 Dark Souls 3 的价格比较",
+      "expected_topics": [
+        "Elden Ring|1245620|法环",
+        "Dark Souls|黑暗之魂|黑魂",
+        "价格|price|售价|定价",
+        "折扣|discount|打折",
+        "对比|差异|comparison"
+      ],
+      "required_evidence_types": ["price_data", "steam_api"],
+      "forbidden_claims": [
+        "Elden Ring肯定比黑魂值",
+        "黑魂3永远是最便宜的"
+      ],
+      "expected_uncertainty_terms": [
+        "参考",
+        "可能",
+        "建议",
+        "当前"
+      ],
+      "mock_answer": "## Elden Ring vs Dark Souls 3 价格对比\n\n数据来源：Steam 商店（https://store.steampowered.com/app/1245620）\n\n| 项目 | Elden Ring (appid 1245620) | Dark Souls 3 (appid 374320) |\n|------|---------------------------|-----------------------------|\n| 国区原价 | ¥298 | ¥268 |\n| 当前售价 | ¥298 | ¥268 |\n| 史低价格 | ¥178.80 | ¥67 |\n| 当前折扣 | 无 | 无 |\n\n参考 Steam 商店当前数据，两款游戏目前均无折扣。参考历史促销规律，黑魂3作为老游戏打折频率更高、幅度更大。建议购买前以 Steam 商店页面为准，实际价格可能随时变动。"
+    },
+    {
+      "case_id": "rq_008",
+      "task_type": "game_comparison",
+      "quality_label": "marginal",
+      "query": "CS2 和 Valorant 哪个更受欢迎？",
+      "expected_topics": [
+        "CS2|730|Counter",
+        "Valorant|瓦罗兰特",
+        "玩家数|在线|player",
+        "对比|比较|哪个",
+        "Twitch|直播|赛事"
+      ],
+      "required_evidence_types": ["player_count", "web_source"],
+      "forbidden_claims": [
+        "肯定是CS2更受欢迎",
+        "Valorant绝对不行",
+        "中国玩家都觉得"
+      ],
+      "expected_uncertainty_terms": [
+        "难以直接比较",
+        "不同维度",
+        "可能"
+      ],
+      "mock_answer": "## CS2 vs Valorant 对比\n\n参考 https://steamcharts.com 的数据，肯定是CS2更受欢迎，因为Steam在线人数摆在那里。Valorant绝对不行。\n\n中国玩家都觉得CS2更好。在Twitch直播平台上CS2的观众也多得多，但不同维度的比较可能有不同结论。"
+    },
+    {
+      "case_id": "rq_009",
+      "task_type": "game_comparison",
+      "quality_label": "poor",
+      "query": "比较一下 730 和 570",
+      "expected_topics": [
+        "730|CS2|Counter",
+        "570|Dota 2",
+        "游戏类型|genre|类型",
+        "差异|对比|比较"
+      ],
+      "required_evidence_types": ["steam_api"],
+      "forbidden_claims": [
+        "570更好玩",
+        "730更适合所有人",
+        "最棒的游戏"
+      ],
+      "expected_uncertainty_terms": [
+        "主观",
+        "可能",
+        "因人而异"
+      ],
+      "mock_answer": "730 和 570 是不同类型的游戏。730 是射击游戏，570 是MOBA。730 比 570 更适合所有人。730 是 Steam 上最棒的游戏，玩的人最多就是最好的证明。"
+    },
+    {
+      "case_id": "rq_010",
+      "task_type": "history_trend",
+      "quality_label": "excellent",
+      "query": "CS2 过去一个月的玩家趋势",
+      "expected_topics": [
+        "趋势|trend|走势|变化",
+        "时间范围|过去一个月|30天|month",
+        "在线人数|player|玩家数",
+        "峰值|peak|低谷",
+        "数据点|快照|snapshot|采样",
+        "appid|730|CS2"
+      ],
+      "required_evidence_types": ["snapshot_data", "player_count"],
+      "forbidden_claims": [
+        "玩家数一定会继续增长",
+        "趋势必然会延续",
+        "下个月肯定"
+      ],
+      "expected_uncertainty_terms": [
+        "样本",
+        "可能",
+        "仅供参考",
+        "不能保证"
+      ],
+      "mock_answer": "## CS2 近30天玩家趋势分析\n\n基于本地历史快照数据（2026-05-10 至 2026-06-09，共 30 个采样点）：\n\n### 趋势概览\n- **期初在线**（5月10日）：约 820,000\n- **期末在线**（6月9日）：约 880,000\n- **期间最高**：约 1,180,000（5月24日，周末峰值）\n- **期间最低**：约 680,000（5月15日，维护时段）\n- **30日均值**：约 910,000\n\n### 分析\n整体呈小幅上升趋势（+7.3%），但周期性波动明显。周末在线通常比工作日高 15-25%。\n\n### 局限性\n- 数据基于每日单次采样，无法反映日内波动\n- 过去表现不能保证未来趋势\n- 样本期间可能包括特定活动/更新影响\n\n数据来源：本地 snapshot 数据库（snapshot_ids: [1201, 1202, ..., 1230]）"
+    },
+    {
+      "case_id": "rq_011",
+      "task_type": "history_trend",
+      "quality_label": "good",
+      "query": "黑神话悟空的价格变化曲线",
+      "expected_topics": [
+        "价格|price|售价|定价",
+        "变化|趋势|曲线|走势",
+        "appid|2358720|黑神话|Wukong",
+        "折扣|discount|打折|促销",
+        "时间段|历史|记录"
+      ],
+      "required_evidence_types": ["price_data", "snapshot_data"],
+      "forbidden_claims": [
+        "价格只会越来越低",
+        "不会再涨价了"
+      ],
+      "expected_uncertainty_terms": [
+        "参考",
+        "可能",
+        "取决于",
+        "基于"
+      ],
+      "mock_answer": "## 黑神话悟空价格变化\n\n基于本地快照记录（appid 2358720，来源：Steam 商店 https://store.steampowered.com/app/2358720）：\n\n| 日期 | 价格 | 折扣 |\n|------|------|------|\n| 2024-08-20（首发） | ¥268 | 0% |\n| 2024-11-27（秋促） | ¥187.60 | -30% |\n| 2024-12-19（冬促） | ¥187.60 | -30% |\n| 2025-06-09（当前） | ¥268 | 0% |\n\n游戏首发价格为 ¥268，大型促销期间折扣约 30%。参考 Snapshots 历史记录，未来促销活动可能带来类似幅度的折扣。具体价格取决于发行商策略。"
+    },
+    {
+      "case_id": "rq_012",
+      "task_type": "history_trend",
+      "quality_label": "adequate",
+      "query": "看看 Dota 2 最近30天的在线走势",
+      "expected_topics": [
+        "Dota 2|570",
+        "30天|最近|一个月",
+        "在线|player count|人数",
+        "走势|趋势|变化|trend"
+      ],
+      "required_evidence_types": ["player_count", "snapshot_data"],
+      "forbidden_claims": [
+        "Dota2已经没人玩了",
+        "永远回不到巅峰"
+      ],
+      "expected_uncertainty_terms": [
+        "大致",
+        "可能",
+        "波动"
+      ],
+      "mock_answer": "## Dota 2 近30天在线走势\n\nDota 2 (appid 570) 最近30天在线人数还算稳定。大致在45万到65万之间波动，周末会高一些。\n\n基于本地 snapshot 数据（snapshot_ids 参考本地数据库），整体看起来没太大变化，高峰期还是集中在晚上。短期可能维持这一水平。"
+    },
+    {
+      "case_id": "rq_013",
+      "task_type": "history_trend",
+      "quality_label": "marginal",
+      "query": "730 的历史数据变化趋势",
+      "expected_topics": [
+        "730|CS2",
+        "历史|长期|趋势",
+        "在线|player|人数",
+        "对比|变化|增长|下降",
+        "数据来源|快照|采样"
+      ],
+      "required_evidence_types": ["snapshot_data", "player_count"],
+      "forbidden_claims": [
+        "数据肯定准确",
+        "一定会继续涨",
+        "永远不会跌"
+      ],
+      "expected_uncertainty_terms": [
+        "可能",
+        "估计",
+        "不确定"
+      ],
+      "mock_answer": "730 的数据肯定是越来越好的。参考历史快照数据，长期来看在线人数一直在涨，以后一定会继续涨，永远不会跌的。玩家只会越来越多。"
+    },
+    {
+      "case_id": "rq_014",
+      "task_type": "review_analysis",
+      "quality_label": "excellent",
+      "query": "分析 CS2 的玩家评论",
+      "expected_topics": [
+        "好评|正面|positive|优点",
+        "差评|负面|negative|缺点",
+        "主题|关键词|topic|theme",
+        "appid|730|CS2",
+        "样本量|sample|抽样|数量",
+        "时间范围|最近|recent|period"
+      ],
+      "required_evidence_types": ["review_sample"],
+      "forbidden_claims": [
+        "所有玩家一致认为",
+        "代表着所有玩家的看法",
+        "100%准确反映"
+      ],
+      "expected_uncertainty_terms": [
+        "抽样",
+        "可能",
+        "不代表",
+        "仅供参考",
+        "部分"
+      ],
+      "mock_answer": "## CS2 玩家评论分析\n\n基于 Steam 近期评论抽样（appid 730，样本量：200条，时间范围：2026-05-25 至 2026-06-09）：\n\n### 总体分布\n- 好评：136 条（68%）\n- 差评：64 条（32%）\n\n### 好评主题\n1. **枪械手感**（42%）：玩家认可射击手感和后坐力改进\n2. **画面表现**（28%）：Source 2 引擎带来的画质提升\n3. **竞技性**（18%）：Premier 模式受欢迎\n\n### 差评主题\n1. **外挂问题**（35%）：部分玩家反馈遇到作弊者\n2. **服务器稳定性**（25%）：延迟和丢包问题\n3. **内容更新速度**（15%）：希望更多地图和模式\n\n### 局限性\n- 样本量为 200 条，不代表全部玩家意见\n- 抽样可能存在时间偏差（如特定更新后评论波动）\n- 评论语言以中英文为主，其他语言覆盖不足\n\n分析仅供参考，完整评论数据请访问 Steam 商店页面（https://store.steampowered.com/app/730）。"
+    },
+    {
+      "case_id": "rq_015",
+      "task_type": "review_analysis",
+      "quality_label": "good",
+      "query": "Elden Ring 的口碑怎么样",
+      "expected_topics": [
+        "Elden Ring|1245620|法环",
+        "评价|口碑|review",
+        "好评|差评|正面|负面",
+        "原因|主题|关键词"
+      ],
+      "required_evidence_types": ["review_sample"],
+      "forbidden_claims": [
+        "所有人都在夸",
+        "没有一个差评"
+      ],
+      "expected_uncertainty_terms": [
+        "抽样",
+        "可能",
+        "部分"
+      ],
+      "mock_answer": "## Elden Ring 口碑分析\n\n基于 Steam 评论抽样分析（appid 1245620，来源：https://store.steampowered.com/app/1245620）：\n\nElden Ring 整体口碑非常正面，Steam 总体评价为「好评如潮」。\n\n### 正面反馈\n- 开放世界设计出色，探索感强\n- Boss 战设计精彩，挑战性适中\n- 美术风格和配乐广受赞誉\n\n### 负面反馈\n- 部分玩家认为优化仍有提升空间\n- DLC 难度曲线引发一些讨论\n\n以上分析基于抽样评论，具体体验可能因人而异。"
+    },
+    {
+      "case_id": "rq_016",
+      "task_type": "review_analysis",
+      "quality_label": "adequate",
+      "query": "黑神话悟空的差评在说什么",
+      "expected_topics": [
+        "差评|负面|negative|批评",
+        "原因|问题|issue|缺点",
+        "appid|2358720|黑神话",
+        "分类|主题|category"
+      ],
+      "required_evidence_types": ["review_sample"],
+      "forbidden_claims": [
+        "差评都是无脑黑的",
+        "好评才是真实玩家"
+      ],
+      "expected_uncertainty_terms": [
+        "部分",
+        "可能",
+        "抽样"
+      ],
+      "mock_answer": "## 黑神话悟空差评分析\n\n基于 Steam 评论抽样（appid 2358720），差评主要集中在：\n\n- 优化问题，部分配置掉帧\n- 地图设计引导不足\n- 部分 Boss 难度偏高\n\n这些是差评中提到比较多的几个方面。抽样结果可能无法完全代表全体玩家意见。"
+    },
+    {
+      "case_id": "rq_017",
+      "task_type": "web_sentiment",
+      "quality_label": "good",
+      "query": "网上对 CS2 的评价如何？",
+      "expected_topics": [
+        "CS2|730|Counter",
+        "社区|community|论坛|reddit",
+        "评价|sentiment|看法|态度",
+        "正面|负面|positive|negative",
+        "来源|source|链接"
+      ],
+      "required_evidence_types": ["web_source"],
+      "forbidden_claims": [
+        "网上所有人都说",
+        "全社区一致认为"
+      ],
+      "expected_uncertainty_terms": [
+        "部分",
+        "可能",
+        "不代表"
+      ],
+      "mock_answer": "## CS2 网络舆情分析\n\n基于近期网页搜索和社区讨论（来源：Steam 社区、Reddit r/GlobalOffensive，参考链接：https://www.reddit.com/r/GlobalOffensive/）：\n\n### 整体情绪\n社区讨论偏正面，主要集中在以下方面：\n\n**正面讨论（约60%）**\n- Premier 排位模式受到认可\n- 画面和音效升级获得好评\n- 新武器平衡性讨论活跃\n\n**负面讨论（约40%）**\n- 外挂检测效率的讨论\n- 部分地图性能优化诉求\n- Tick rate 相关技术讨论\n\n以上分析基于部分公开社区讨论，不代表所有玩家观点。搜索结果可能受搜索时间点和平台覆盖范围影响。"
+    },
+    {
+      "case_id": "rq_018",
+      "task_type": "web_sentiment",
+      "quality_label": "adequate",
+      "query": "社交媒体上关于 Elden Ring 的讨论",
+      "expected_topics": [
+        "Elden Ring|1245620|法环",
+        "社交媒体|Twitter|Reddit|社区",
+        "讨论|话题|trend|热门",
+        "DLC|更新|内容"
+      ],
+      "required_evidence_types": ["web_source"],
+      "forbidden_claims": [
+        "所有社交媒体都在讨论",
+        "全球最热话题"
+      ],
+      "expected_uncertainty_terms": [
+        "部分",
+        "可能"
+      ],
+      "mock_answer": "## Elden Ring 社交媒体讨论\n\nElden Ring (appid 1245620) 在社交媒体上讨论度很高，基于社区搜索（参考 Reddit r/Eldenring），讨论主要集中在DLC内容和Boss攻略方面。\n\n最近关于DLC难度的讨论比较多，部分玩家分享不同的看法。"
+    },
+    {
+      "case_id": "rq_019",
+      "task_type": "web_sentiment",
+      "quality_label": "poor",
+      "query": "社区对 Dota 2 新版本的反应",
+      "expected_topics": [
+        "Dota 2|570",
+        "新版本|更新|patch",
+        "社区|玩家|反应|feedback",
+        "正面|负面|意见"
+      ],
+      "required_evidence_types": ["web_source"],
+      "forbidden_claims": [
+        "所有玩家都讨厌这个更新",
+        "这次更新毁了游戏",
+        "没有人喜欢新版本"
+      ],
+      "expected_uncertainty_terms": [
+        "部分玩家",
+        "可能",
+        "基于"
+      ],
+      "mock_answer": "Dota 2 这次更新毁了游戏！所有玩家都讨厌这个更新。没有人喜欢新版本，负面意见非常多。改的太差了。"
+    },
+    {
+      "case_id": "rq_020",
+      "task_type": "knowledge_qa",
+      "quality_label": "excellent",
+      "query": "CS2 的武器系统有哪些？",
+      "expected_topics": [
+        "武器类型|weapon|枪械|装备",
+        "步枪|手枪|SMG|sniper",
+        "伤害|damage|属性|参数",
+        "经济|价格|购买|economy"
+      ],
+      "required_evidence_types": ["knowledge_chunk"],
+      "forbidden_claims": [
+        "这些都是官方确认的数据",
+        "所有数据绝对准确"
+      ],
+      "expected_uncertainty_terms": [
+        "参考",
+        "可能",
+        "建议",
+        "版本"
+      ],
+      "mock_answer": "## CS2 武器系统\n\n基于本地知识库检索结果（appid 730，相关文档：3篇，relevance_score: 0.85-0.92）：\n\n### 武器分类\nCS2 武器分为以下几类：\n\n| 类别 | 代表武器 | 特点 |\n|------|----------|------|\n| 手枪 | Glock-18, USP-S, Desert Eagle | 经济局首选 |\n| 步枪 | AK-47, M4A1-S, M4A4 | 主力武器 |\n| 狙击 | AWP, SSG 08, SCAR-20 | 远程精确打击 |\n| 冲锋枪 | MP9, MAC-10, P90 | 近战高射速 |\n| 重型 | Nova, XM1014, MAG-7 | 近距离高伤害 |\n\n### 经济系统\n- AK-47: $2700，CT 不可购买\n- M4A1-S: $2900，T 不可购买\n- AWP: $4750，双方可用\n- Desert Eagle: $700，双方可用\n\n### 注意事项\n以上武器参数基于当前版本（截至知识库最后更新）。游戏更新可能调整武器属性，建议以游戏内实际数据为准核实。\n\n参考知识库：CS2 武器系统详解、CS2 竞技排名与匹配机制"
+    },
+    {
+      "case_id": "rq_021",
+      "task_type": "knowledge_qa",
+      "quality_label": "adequate",
+      "query": "Dota 2 的排位系统怎么运作？",
+      "expected_topics": [
+        "Dota 2|570",
+        "排位|MMR|rank|rating",
+        "机制|算法|system|运作",
+        "段位|tier|等级|medal"
+      ],
+      "required_evidence_types": ["knowledge_chunk"],
+      "forbidden_claims": [
+        "这是唯一的官方解释",
+        "保证上分"
+      ],
+      "expected_uncertainty_terms": [
+        "基于",
+        "大致",
+        "可能"
+      ],
+      "mock_answer": "## Dota 2 排位系统\n\nDota 2 (appid 570) 使用 MMR（Matchmaking Rating）系统进行排位匹配。\n\n玩家需要打 100 小时普通匹配后才能解锁排位模式。系统根据胜负和表现调整 MMR。段位从 Herald 到 Immortal 共 8 个大段位。\n\n以上信息基于本地知识库检索。具体机制可能随版本更新调整。"
+    },
+    {
+      "case_id": "rq_022",
+      "task_type": "knowledge_qa",
+      "quality_label": "good",
+      "query": "黑神话悟空需要什么配置？",
+      "expected_topics": [
+        "配置|requirement|spec|硬件",
+        "最低|minimum|最低要求",
+        "推荐|recommended|建议",
+        "显卡|GPU|graphics",
+        "内存|RAM|memory",
+        "appid|2358720|黑神话"
+      ],
+      "required_evidence_types": ["knowledge_chunk"],
+      "forbidden_claims": [
+        "任何电脑都能玩",
+        "低配和高配完全没区别"
+      ],
+      "expected_uncertainty_terms": [
+        "参考",
+        "可能",
+        "建议"
+      ],
+      "mock_answer": "## 黑神话悟空配置要求\n\n基于本地知识库（参考文档：`黑神话悟空配置要求与优化`），appid 2358720：\n\n### 最低配置\n- **操作系统**：Windows 10 64-bit\n- **处理器**：Intel Core i5-8400 / AMD Ryzen 5 1600\n- **内存**：16 GB RAM\n- **显卡**：NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580 8GB\n- **存储**：130 GB SSD\n\n### 推荐配置\n- **显卡**：NVIDIA GeForce RTX 3060 / AMD Radeon RX 6700 XT\n- **内存**：32 GB RAM\n\n以上配置信息基于游戏首发时的官方公布数据，后续优化补丁可能降低实际需求。建议以 Steam 商店页面最新信息为准。"
+    }
+  ]
+}

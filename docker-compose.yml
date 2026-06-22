@@ -1,0 +1,92 @@
+# Default Docker Compose (production-oriented with code mounts).
+# For development with hot-reload, use: docker compose -f docker-compose.dev.yml up
+# For strict production without source mounts, use: docker compose -f docker-compose.prod.yml up
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: steamanalysis-backend
+    ports:
+      - "9000:9000"
+    volumes:
+      - steamanalysis_data:/app/data
+      - ./backend:/app:ro  # Mount code for hot-reload in dev
+    environment:
+      - STEAMANALYSIS_ENV=${STEAMANALYSIS_ENV:-production}
+      - STEAMANALYSIS_DATABASE_URL=sqlite:////app/data/steamanalysis.sqlite3
+      - STEAMANALYSIS_DEFAULT_CC=${STEAMANALYSIS_DEFAULT_CC:-CN}
+      - STEAMANALYSIS_DEFAULT_LANGUAGE=${STEAMANALYSIS_DEFAULT_LANGUAGE:-schinese}
+      - STEAMANALYSIS_DEFAULT_CURRENCY=${STEAMANALYSIS_DEFAULT_CURRENCY:-CNY}
+      - STEAMANALYSIS_DEEPSEEK_MODEL=${STEAMANALYSIS_DEEPSEEK_MODEL:-deepseek-v4-pro}
+      - STEAMANALYSIS_DEEPSEEK_FALLBACK_MODEL=${STEAMANALYSIS_DEEPSEEK_FALLBACK_MODEL:-}
+      - STEAMANALYSIS_ALLOW_MODEL_FALLBACK=${STEAMANALYSIS_ALLOW_MODEL_FALLBACK:-true}
+      - STEAMANALYSIS_CORS_ORIGINS=${STEAMANALYSIS_CORS_ORIGINS:-http://localhost,http://127.0.0.1}
+      - STEAMANALYSIS_FIRECRAWL_API_URL=${STEAMANALYSIS_FIRECRAWL_API_URL:-https://api.firecrawl.dev}
+      - STEAMANALYSIS_WEB_SEARCH_BACKEND=${STEAMANALYSIS_WEB_SEARCH_BACKEND:-auto}
+      - STEAMANALYSIS_REQUEST_TIMEOUT_SECONDS=${STEAMANALYSIS_REQUEST_TIMEOUT_SECONDS:-12}
+      - STEAMANALYSIS_LOG_LEVEL=${STEAMANALYSIS_LOG_LEVEL:-INFO}
+      - STEAMANALYSIS_ENABLE_SCHEDULER=false
+      - STEAMANALYSIS_ENABLE_TASK_WORKER=false
+      # Secrets - provide via .env file or environment
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - STEAM_API_KEY=${STEAM_API_KEY:-}
+      - FIRECRAWL_API_KEY=${FIRECRAWL_API_KEY:-}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:9000/api/health').raise_for_status()"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  task_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: steamanalysis-task-worker
+    command: python -m app.worker.task_worker
+    volumes:
+      - steamanalysis_data:/app/data
+    environment:
+      - STEAMANALYSIS_ENV=${STEAMANALYSIS_ENV:-production}
+      - STEAMANALYSIS_DATABASE_URL=sqlite:////app/data/steamanalysis.sqlite3?timeout=30
+      - STEAMANALYSIS_DEFAULT_CC=${STEAMANALYSIS_DEFAULT_CC:-CN}
+      - STEAMANALYSIS_DEFAULT_LANGUAGE=${STEAMANALYSIS_DEFAULT_LANGUAGE:-schinese}
+      - STEAMANALYSIS_DEFAULT_CURRENCY=${STEAMANALYSIS_DEFAULT_CURRENCY:-CNY}
+      - STEAMANALYSIS_LOG_LEVEL=${STEAMANALYSIS_LOG_LEVEL:-INFO}
+      - STEAMANALYSIS_ENABLE_SCHEDULER=false
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - STEAM_API_KEY=${STEAM_API_KEY:-}
+      - FIRECRAWL_API_KEY=${FIRECRAWL_API_KEY:-}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys,os; sys.exit(0)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: steamanalysis-frontend
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:80/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  steamanalysis_data:
+    driver: local

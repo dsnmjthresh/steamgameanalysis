@@ -1,0 +1,723 @@
+{
+  "accuracy": 1.0,
+  "total": 41,
+  "correct": 41,
+  "results": [
+    {
+      "index": 0,
+      "query": "CS2 现在有多少人在玩？",
+      "expected_task_type": "single_game",
+      "classified_task_type": "single_game",
+      "expected_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "actual_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.72
+    },
+    {
+      "index": 1,
+      "query": "查询一下 730 的游戏详情",
+      "expected_task_type": "single_game",
+      "classified_task_type": "single_game",
+      "expected_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "actual_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.72
+    },
+    {
+      "index": 2,
+      "query": "Dota 2 的新闻有什么？",
+      "expected_task_type": "single_game",
+      "classified_task_type": "single_game",
+      "expected_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "actual_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.72
+    },
+    {
+      "index": 3,
+      "query": "Can you find me info about Baldur's Gate 3?",
+      "expected_task_type": "single_game",
+      "classified_task_type": "single_game",
+      "expected_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "actual_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.72
+    },
+    {
+      "index": 4,
+      "query": "黑神话悟空打折了吗？",
+      "expected_task_type": "single_game",
+      "classified_task_type": "single_game",
+      "expected_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "actual_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.72
+    },
+    {
+      "index": 5,
+      "query": "Show me details for appid 570",
+      "expected_task_type": "single_game",
+      "classified_task_type": "single_game",
+      "expected_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "actual_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.72
+    },
+    {
+      "index": 6,
+      "query": "告诉我 Elden Ring 现在多少钱",
+      "expected_task_type": "single_game",
+      "classified_task_type": "single_game",
+      "expected_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "actual_tools": [
+        "get_current_players",
+        "get_appdetails",
+        "get_game_news",
+        "get_achievement_stats"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.72
+    },
+    {
+      "index": 7,
+      "query": "对比一下 CS2 和 Dota 2",
+      "expected_task_type": "game_comparison",
+      "classified_task_type": "game_comparison",
+      "expected_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "actual_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.86
+    },
+    {
+      "index": 8,
+      "query": "730 和 570 哪个更受欢迎？",
+      "expected_task_type": "game_comparison",
+      "classified_task_type": "game_comparison",
+      "expected_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "actual_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.86
+    },
+    {
+      "index": 9,
+      "query": "Which is better, CS2 or Valorant?",
+      "expected_task_type": "game_comparison",
+      "classified_task_type": "game_comparison",
+      "expected_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "actual_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.86
+    },
+    {
+      "index": 10,
+      "query": "黑神话悟空和只狼的价格比较",
+      "expected_task_type": "game_comparison",
+      "classified_task_type": "game_comparison",
+      "expected_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "actual_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.86
+    },
+    {
+      "index": 11,
+      "query": "CS2 和 Valorant 在线人数对比",
+      "expected_task_type": "game_comparison",
+      "classified_task_type": "game_comparison",
+      "expected_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "actual_tools": [
+        "compare_snapshots",
+        "get_appdetails"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.86
+    },
+    {
+      "index": 12,
+      "query": "分析 CS2 的玩家评论",
+      "expected_task_type": "review_analysis",
+      "classified_task_type": "review_analysis",
+      "expected_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "actual_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.85
+    },
+    {
+      "index": 13,
+      "query": "Analyze reviews for Elden Ring",
+      "expected_task_type": "review_analysis",
+      "classified_task_type": "review_analysis",
+      "expected_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "actual_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.85
+    },
+    {
+      "index": 14,
+      "query": "帮我看看黑神话的差评都在说什么",
+      "expected_task_type": "review_analysis",
+      "classified_task_type": "review_analysis",
+      "expected_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "actual_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.85
+    },
+    {
+      "index": 15,
+      "query": "What are people saying about Starfield?",
+      "expected_task_type": "review_analysis",
+      "classified_task_type": "review_analysis",
+      "expected_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "actual_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.83
+    },
+    {
+      "index": 16,
+      "query": "Elden Ring 的口碑怎么样",
+      "expected_task_type": "review_analysis",
+      "classified_task_type": "review_analysis",
+      "expected_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "actual_tools": [
+        "get_reviews",
+        "analyze_reviews"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.83
+    },
+    {
+      "index": 17,
+      "query": "CS2 这个月在线趋势怎么样？",
+      "expected_task_type": "history_trend",
+      "classified_task_type": "history_trend",
+      "expected_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "actual_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.84
+    },
+    {
+      "index": 18,
+      "query": "What's the player trend for CS2?",
+      "expected_task_type": "history_trend",
+      "classified_task_type": "history_trend",
+      "expected_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "actual_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.84
+    },
+    {
+      "index": 19,
+      "query": "730 最近30天数据走势",
+      "expected_task_type": "history_trend",
+      "classified_task_type": "history_trend",
+      "expected_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "actual_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.84
+    },
+    {
+      "index": 20,
+      "query": "Dota 2 的历史玩家数据",
+      "expected_task_type": "history_trend",
+      "classified_task_type": "history_trend",
+      "expected_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "actual_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.84
+    },
+    {
+      "index": 21,
+      "query": "CS2 过去一个月的在线变化",
+      "expected_task_type": "history_trend",
+      "classified_task_type": "history_trend",
+      "expected_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "actual_tools": [
+        "get_trend_analysis",
+        "list_snapshots"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.84
+    },
+    {
+      "index": 22,
+      "query": "搜索一下网上对 CS2 的评价",
+      "expected_task_type": "web_sentiment",
+      "classified_task_type": "web_sentiment",
+      "expected_tools": [
+        "analyze_web_sentiment"
+      ],
+      "actual_tools": [
+        "analyze_web_sentiment"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.87
+    },
+    {
+      "index": 23,
+      "query": "What is the web sentiment around Elden Ring?",
+      "expected_task_type": "web_sentiment",
+      "classified_task_type": "web_sentiment",
+      "expected_tools": [
+        "analyze_web_sentiment"
+      ],
+      "actual_tools": [
+        "analyze_web_sentiment"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.87
+    },
+    {
+      "index": 24,
+      "query": "社交媒体上对Starfield的讨论",
+      "expected_task_type": "web_sentiment",
+      "classified_task_type": "web_sentiment",
+      "expected_tools": [
+        "analyze_web_sentiment"
+      ],
+      "actual_tools": [
+        "analyze_web_sentiment"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.87
+    },
+    {
+      "index": 25,
+      "query": "Search web for CS2 community sentiment",
+      "expected_task_type": "web_sentiment",
+      "classified_task_type": "web_sentiment",
+      "expected_tools": [
+        "analyze_web_sentiment"
+      ],
+      "actual_tools": [
+        "analyze_web_sentiment"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.87
+    },
+    {
+      "index": 26,
+      "query": "社区对CS2更新的反应",
+      "expected_task_type": "web_sentiment",
+      "classified_task_type": "web_sentiment",
+      "expected_tools": [
+        "analyze_web_sentiment"
+      ],
+      "actual_tools": [
+        "analyze_web_sentiment"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.87
+    },
+    {
+      "index": 27,
+      "query": "分析一下当前PC游戏市场趋势",
+      "expected_task_type": "market_intelligence",
+      "classified_task_type": "market_intelligence",
+      "expected_tools": [
+        "search_games"
+      ],
+      "actual_tools": [
+        "search_games"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.82
+    },
+    {
+      "index": 28,
+      "query": "What are the top-selling games on Steam?",
+      "expected_task_type": "market_intelligence",
+      "classified_task_type": "market_intelligence",
+      "expected_tools": [
+        "search_games"
+      ],
+      "actual_tools": [
+        "search_games"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.82
+    },
+    {
+      "index": 29,
+      "query": "Steam 上最近哪些游戏最火？",
+      "expected_task_type": "market_intelligence",
+      "classified_task_type": "market_intelligence",
+      "expected_tools": [
+        "search_games"
+      ],
+      "actual_tools": [
+        "search_games"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.82
+    },
+    {
+      "index": 30,
+      "query": "现在流行什么类型的游戏",
+      "expected_task_type": "market_intelligence",
+      "classified_task_type": "market_intelligence",
+      "expected_tools": [
+        "search_games"
+      ],
+      "actual_tools": [
+        "search_games"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.82
+    },
+    {
+      "index": 31,
+      "query": "CS2 的武器有哪些？",
+      "expected_task_type": "knowledge_qa",
+      "classified_task_type": "knowledge_qa",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [
+        "rag_search"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.83
+    },
+    {
+      "index": 32,
+      "query": "How does the ranking system work in CS2?",
+      "expected_task_type": "knowledge_qa",
+      "classified_task_type": "knowledge_qa",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [
+        "rag_search"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.83
+    },
+    {
+      "index": 33,
+      "query": "什么是VAC反作弊系统？",
+      "expected_task_type": "knowledge_qa",
+      "classified_task_type": "knowledge_qa",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [
+        "rag_search"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.83
+    },
+    {
+      "index": 34,
+      "query": "Elden Ring 攻略指南",
+      "expected_task_type": "knowledge_qa",
+      "classified_task_type": "knowledge_qa",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [
+        "rag_search"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.83
+    },
+    {
+      "index": 35,
+      "query": "导出 CS2 的数据报告",
+      "expected_task_type": "export",
+      "classified_task_type": "export",
+      "expected_tools": [],
+      "actual_tools": [],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.9
+    },
+    {
+      "index": 36,
+      "query": "Export the analysis results for Dota 2",
+      "expected_task_type": "export",
+      "classified_task_type": "export",
+      "expected_tools": [],
+      "actual_tools": [],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.9
+    },
+    {
+      "index": 37,
+      "query": "下载 CS2 的分析报告",
+      "expected_task_type": "export",
+      "classified_task_type": "export",
+      "expected_tools": [],
+      "actual_tools": [],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.9
+    },
+    {
+      "index": 38,
+      "query": "帮我每天监控 730 的在线人数",
+      "expected_task_type": "schedule_monitor",
+      "classified_task_type": "schedule_monitor",
+      "expected_tools": [
+        "save_snapshot"
+      ],
+      "actual_tools": [
+        "save_snapshot"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.89
+    },
+    {
+      "index": 39,
+      "query": "Monitor CS2 player count every day",
+      "expected_task_type": "schedule_monitor",
+      "classified_task_type": "schedule_monitor",
+      "expected_tools": [
+        "save_snapshot"
+      ],
+      "actual_tools": [
+        "save_snapshot"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.89
+    },
+    {
+      "index": 40,
+      "query": "每小时检查一次 Dota 2 的在线",
+      "expected_task_type": "schedule_monitor",
+      "classified_task_type": "schedule_monitor",
+      "expected_tools": [
+        "save_snapshot"
+      ],
+      "actual_tools": [
+        "save_snapshot"
+      ],
+      "task_type_match": true,
+      "tool_match": true,
+      "correct": true,
+      "confidence": 0.89
+    }
+  ]
+}

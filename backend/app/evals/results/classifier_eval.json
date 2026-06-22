@@ -1,0 +1,610 @@
+{
+  "accuracy": 0.9552,
+  "total": 67,
+  "correct": 64,
+  "results": [
+    {
+      "index": 0,
+      "query": "CS2 现在有多少人在玩？",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 1,
+      "query": "How many players does CS2 have right now?",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 2,
+      "query": "查询一下 730 的游戏详情",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 3,
+      "query": "730 这个游戏的评价怎么样？",
+      "expected": "single_game",
+      "actual": "review_analysis",
+      "match": false,
+      "confidence": 0.83,
+      "reason": "命中评价/口碑分析表达。"
+    },
+    {
+      "index": 4,
+      "query": "What is the price of Elden Ring?",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 5,
+      "query": "Dota 2 的新闻有什么？",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 6,
+      "query": "帮我看看 Starfield 的成就统计",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 7,
+      "query": "Show me details for appid 570",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 8,
+      "query": "搜索黑神话",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 9,
+      "query": "有没有类似 CS2 的游戏？",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 10,
+      "query": "Can you find me info about Baldur's Gate 3?",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 11,
+      "query": "黑神话悟空打折了吗？",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 12,
+      "query": "CS2 的数据信息",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 13,
+      "query": "告诉我 Elden Ring 现在多少钱",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 14,
+      "query": "看看 PUBG 的在线人数",
+      "expected": "single_game",
+      "actual": "single_game",
+      "match": true,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 15,
+      "query": "对比一下 CS2 和 Dota 2",
+      "expected": "game_comparison",
+      "actual": "game_comparison",
+      "match": true,
+      "confidence": 0.86,
+      "reason": "命中游戏对比表达。"
+    },
+    {
+      "index": 16,
+      "query": "Compare CS2 and Dota 2",
+      "expected": "game_comparison",
+      "actual": "game_comparison",
+      "match": true,
+      "confidence": 0.86,
+      "reason": "命中游戏对比表达。"
+    },
+    {
+      "index": 17,
+      "query": "730 和 570 哪个更受欢迎？",
+      "expected": "game_comparison",
+      "actual": "game_comparison",
+      "match": true,
+      "confidence": 0.86,
+      "reason": "命中游戏对比表达。"
+    },
+    {
+      "index": 18,
+      "query": "对比 Elden Ring 和 Dark Souls 3",
+      "expected": "game_comparison",
+      "actual": "game_comparison",
+      "match": true,
+      "confidence": 0.86,
+      "reason": "命中游戏对比表达。"
+    },
+    {
+      "index": 19,
+      "query": "CS2 和 Valorant 在线人数对比",
+      "expected": "game_comparison",
+      "actual": "game_comparison",
+      "match": true,
+      "confidence": 0.86,
+      "reason": "命中游戏对比表达。"
+    },
+    {
+      "index": 20,
+      "query": "帮我比较这几个游戏：730、570、440",
+      "expected": "game_comparison",
+      "actual": "game_comparison",
+      "match": true,
+      "confidence": 0.86,
+      "reason": "命中游戏对比表达。"
+    },
+    {
+      "index": 21,
+      "query": "Which is better, CS2 or Valorant?",
+      "expected": "game_comparison",
+      "actual": "game_comparison",
+      "match": true,
+      "confidence": 0.86,
+      "reason": "命中游戏对比表达。"
+    },
+    {
+      "index": 22,
+      "query": "黑神话悟空和只狼的价格比较",
+      "expected": "game_comparison",
+      "actual": "game_comparison",
+      "match": true,
+      "confidence": 0.86,
+      "reason": "命中游戏对比表达。"
+    },
+    {
+      "index": 23,
+      "query": "分析 CS2 的玩家评论",
+      "expected": "review_analysis",
+      "actual": "review_analysis",
+      "match": true,
+      "confidence": 0.85,
+      "reason": "命中评论/评价分析表达。"
+    },
+    {
+      "index": 24,
+      "query": "Analyze reviews for Elden Ring",
+      "expected": "review_analysis",
+      "actual": "review_analysis",
+      "match": true,
+      "confidence": 0.85,
+      "reason": "命中评论/评价分析表达。"
+    },
+    {
+      "index": 25,
+      "query": "730 最近评价如何？",
+      "expected": "review_analysis",
+      "actual": "review_analysis",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中评价/口碑分析表达。"
+    },
+    {
+      "index": 26,
+      "query": "帮我看看黑神话的差评都在说什么",
+      "expected": "review_analysis",
+      "actual": "review_analysis",
+      "match": true,
+      "confidence": 0.85,
+      "reason": "命中评论/评价分析表达。"
+    },
+    {
+      "index": 27,
+      "query": "What are people saying about Starfield?",
+      "expected": "review_analysis",
+      "actual": "review_analysis",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中「people saying」评论分析表达。"
+    },
+    {
+      "index": 28,
+      "query": "玩家对 Dota 2 最新更新的评价",
+      "expected": "review_analysis",
+      "actual": "review_analysis",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中评价/口碑分析表达。"
+    },
+    {
+      "index": 29,
+      "query": "Elden Ring 的口碑怎么样",
+      "expected": "review_analysis",
+      "actual": "review_analysis",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中评价/口碑分析表达。"
+    },
+    {
+      "index": 30,
+      "query": "分析一下 CS2 的好评和差评",
+      "expected": "review_analysis",
+      "actual": "review_analysis",
+      "match": true,
+      "confidence": 0.85,
+      "reason": "命中评论/评价分析表达。"
+    },
+    {
+      "index": 31,
+      "query": "CS2 这个月在线趋势怎么样？",
+      "expected": "history_trend",
+      "actual": "history_trend",
+      "match": true,
+      "confidence": 0.84,
+      "reason": "命中历史趋势/变化表达。"
+    },
+    {
+      "index": 32,
+      "query": "What's the player trend for CS2 over the last week?",
+      "expected": "history_trend",
+      "actual": "history_trend",
+      "match": true,
+      "confidence": 0.84,
+      "reason": "命中明确历史趋势表达。"
+    },
+    {
+      "index": 33,
+      "query": "730 最近30天数据走势",
+      "expected": "history_trend",
+      "actual": "history_trend",
+      "match": true,
+      "confidence": 0.84,
+      "reason": "命中明确历史趋势表达。"
+    },
+    {
+      "index": 34,
+      "query": "看看黑神话悟空最近的价格变化曲线",
+      "expected": "history_trend",
+      "actual": "history_trend",
+      "match": true,
+      "confidence": 0.84,
+      "reason": "命中历史趋势/变化表达。"
+    },
+    {
+      "index": 35,
+      "query": "Dota 2 的历史玩家数据",
+      "expected": "history_trend",
+      "actual": "history_trend",
+      "match": true,
+      "confidence": 0.84,
+      "reason": "命中明确历史趋势表达。"
+    },
+    {
+      "index": 36,
+      "query": "Show me the trend for appid 730",
+      "expected": "history_trend",
+      "actual": "single_game",
+      "match": false,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 37,
+      "query": "CS2 过去一个月的在线变化",
+      "expected": "history_trend",
+      "actual": "history_trend",
+      "match": true,
+      "confidence": 0.84,
+      "reason": "命中历史趋势/变化表达。"
+    },
+    {
+      "index": 38,
+      "query": "CS2 玩家在线人数是上升还是下降",
+      "expected": "history_trend",
+      "actual": "history_trend",
+      "match": true,
+      "confidence": 0.84,
+      "reason": "命中历史趋势/变化表达。"
+    },
+    {
+      "index": 39,
+      "query": "搜索一下网上对 CS2 的评价",
+      "expected": "web_sentiment",
+      "actual": "web_sentiment",
+      "match": true,
+      "confidence": 0.87,
+      "reason": "命中网页舆情/社区反馈分析表达。"
+    },
+    {
+      "index": 40,
+      "query": "What is the web sentiment around Elden Ring?",
+      "expected": "web_sentiment",
+      "actual": "web_sentiment",
+      "match": true,
+      "confidence": 0.87,
+      "reason": "命中网页舆情/社区反馈分析表达。"
+    },
+    {
+      "index": 41,
+      "query": "搜索关于黑神话悟空的新闻报道",
+      "expected": "web_sentiment",
+      "actual": "single_game",
+      "match": false,
+      "confidence": 0.72,
+      "reason": "按单游戏公开数据查询处理。"
+    },
+    {
+      "index": 42,
+      "query": "社交媒体上对Starfield的讨论",
+      "expected": "web_sentiment",
+      "actual": "web_sentiment",
+      "match": true,
+      "confidence": 0.87,
+      "reason": "命中网页舆情/社区反馈分析表达。"
+    },
+    {
+      "index": 43,
+      "query": "Search web for CS2 community sentiment",
+      "expected": "web_sentiment",
+      "actual": "web_sentiment",
+      "match": true,
+      "confidence": 0.87,
+      "reason": "命中网页舆情/社区反馈分析表达。"
+    },
+    {
+      "index": 44,
+      "query": "网上怎么看Dota 2新版本？",
+      "expected": "web_sentiment",
+      "actual": "web_sentiment",
+      "match": true,
+      "confidence": 0.87,
+      "reason": "命中网页舆情/社区反馈分析表达。"
+    },
+    {
+      "index": 45,
+      "query": "社区对CS2更新的反应",
+      "expected": "web_sentiment",
+      "actual": "web_sentiment",
+      "match": true,
+      "confidence": 0.87,
+      "reason": "命中网页舆情/社区反馈分析表达。"
+    },
+    {
+      "index": 46,
+      "query": "论坛上玩家对黑神话的评价",
+      "expected": "web_sentiment",
+      "actual": "web_sentiment",
+      "match": true,
+      "confidence": 0.87,
+      "reason": "命中网页舆情/社区反馈分析表达。"
+    },
+    {
+      "index": 47,
+      "query": "分析一下当前PC游戏市场趋势",
+      "expected": "market_intelligence",
+      "actual": "market_intelligence",
+      "match": true,
+      "confidence": 0.82,
+      "reason": "命中市场洞察/推荐表达。"
+    },
+    {
+      "index": 48,
+      "query": "What are the top-selling games on Steam right now?",
+      "expected": "market_intelligence",
+      "actual": "market_intelligence",
+      "match": true,
+      "confidence": 0.82,
+      "reason": "命中市场洞察/推荐表达。"
+    },
+    {
+      "index": 49,
+      "query": "Steam 上最近哪些游戏最火？",
+      "expected": "market_intelligence",
+      "actual": "market_intelligence",
+      "match": true,
+      "confidence": 0.82,
+      "reason": "命中市场洞察/推荐表达。"
+    },
+    {
+      "index": 50,
+      "query": "2025年射击游戏市场分析",
+      "expected": "market_intelligence",
+      "actual": "market_intelligence",
+      "match": true,
+      "confidence": 0.82,
+      "reason": "命中市场洞察/推荐表达。"
+    },
+    {
+      "index": 51,
+      "query": "现在流行什么类型的游戏",
+      "expected": "market_intelligence",
+      "actual": "market_intelligence",
+      "match": true,
+      "confidence": 0.82,
+      "reason": "命中市场洞察/推荐表达。"
+    },
+    {
+      "index": 52,
+      "query": "Most popular Steam games this month",
+      "expected": "market_intelligence",
+      "actual": "market_intelligence",
+      "match": true,
+      "confidence": 0.82,
+      "reason": "命中市场洞察/推荐表达。"
+    },
+    {
+      "index": 53,
+      "query": "CS2 的武器有哪些？",
+      "expected": "knowledge_qa",
+      "actual": "knowledge_qa",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中知识库/攻略/RAG 检索表达。"
+    },
+    {
+      "index": 54,
+      "query": "How does the ranking system work in CS2?",
+      "expected": "knowledge_qa",
+      "actual": "knowledge_qa",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中知识库/攻略/RAG 检索表达。"
+    },
+    {
+      "index": 55,
+      "query": "什么是VAC反作弊系统？",
+      "expected": "knowledge_qa",
+      "actual": "knowledge_qa",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中知识库/攻略/RAG 检索表达。"
+    },
+    {
+      "index": 56,
+      "query": "如何安装CS2创意工坊地图？",
+      "expected": "knowledge_qa",
+      "actual": "knowledge_qa",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中知识库/攻略/RAG 检索表达。"
+    },
+    {
+      "index": 57,
+      "query": "Dota 2 的英雄怎么玩",
+      "expected": "knowledge_qa",
+      "actual": "knowledge_qa",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中知识库/攻略/RAG 检索表达。"
+    },
+    {
+      "index": 58,
+      "query": "Elden Ring 攻略指南",
+      "expected": "knowledge_qa",
+      "actual": "knowledge_qa",
+      "match": true,
+      "confidence": 0.83,
+      "reason": "命中知识库/攻略/RAG 检索表达。"
+    },
+    {
+      "index": 59,
+      "query": "导出 CS2 的数据报告",
+      "expected": "export",
+      "actual": "export",
+      "match": true,
+      "confidence": 0.9,
+      "reason": "命中导出/下载报告表达。"
+    },
+    {
+      "index": 60,
+      "query": "给我一份 730 的快照分析报告",
+      "expected": "export",
+      "actual": "export",
+      "match": true,
+      "confidence": 0.89,
+      "reason": "命中导出/下载报告表达。"
+    },
+    {
+      "index": 61,
+      "query": "Export the analysis results for Dota 2",
+      "expected": "export",
+      "actual": "export",
+      "match": true,
+      "confidence": 0.9,
+      "reason": "命中导出/下载报告表达。"
+    },
+    {
+      "index": 62,
+      "query": "下载 CS2 的分析报告",
+      "expected": "export",
+      "actual": "export",
+      "match": true,
+      "confidence": 0.9,
+      "reason": "命中导出/下载报告表达。"
+    },
+    {
+      "index": 63,
+      "query": "帮我每天监控 730 的在线人数",
+      "expected": "schedule_monitor",
+      "actual": "schedule_monitor",
+      "match": true,
+      "confidence": 0.89,
+      "reason": "命中定时监控/提醒表达。"
+    },
+    {
+      "index": 64,
+      "query": "设置一个黑神话的价格变化提醒",
+      "expected": "schedule_monitor",
+      "actual": "schedule_monitor",
+      "match": true,
+      "confidence": 0.89,
+      "reason": "命中定时监控/提醒表达。"
+    },
+    {
+      "index": 65,
+      "query": "Monitor CS2 player count every day",
+      "expected": "schedule_monitor",
+      "actual": "schedule_monitor",
+      "match": true,
+      "confidence": 0.89,
+      "reason": "命中定时监控/提醒表达。"
+    },
+    {
+      "index": 66,
+      "query": "每小时检查一次 Dota 2 的在线",
+      "expected": "schedule_monitor",
+      "actual": "schedule_monitor",
+      "match": true,
+      "confidence": 0.89,
+      "reason": "命中定时监控/提醒表达。"
+    }
+  ]
+}

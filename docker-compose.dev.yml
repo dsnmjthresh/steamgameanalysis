@@ -1,0 +1,75 @@
+# Development Docker Compose — source mounts + hot-reload
+# Usage: docker compose -f docker-compose.dev.yml up
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: steamanalysis-backend-dev
+    ports:
+      - "9000:9000"
+    volumes:
+      - steamanalysis_data_dev:/app/data
+      - ./backend:/app  # Mount source for hot-reload
+    environment:
+      - STEAMANALYSIS_ENV=development
+      - STEAMANALYSIS_DATABASE_URL=sqlite:////app/data/steamanalysis.sqlite3
+      - STEAMANALYSIS_DEFAULT_CC=CN
+      - STEAMANALYSIS_DEFAULT_LANGUAGE=schinese
+      - STEAMANALYSIS_LOG_LEVEL=DEBUG
+      - STEAMANALYSIS_ENABLE_SCHEDULER=false
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - STEAM_API_KEY=${STEAM_API_KEY:-}
+      - FIRECRAWL_API_KEY=${FIRECRAWL_API_KEY:-}
+    command: uvicorn app.main:app --host 0.0.0.0 --port 9000 --reload
+    restart: unless-stopped
+
+  task_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: steamanalysis-task-worker-dev
+    command: python -m app.worker.task_worker
+    volumes:
+      - steamanalysis_data_dev:/app/data
+      - ./backend:/app:ro  # Mount source for hot-reload
+    environment:
+      - STEAMANALYSIS_ENV=development
+      - STEAMANALYSIS_DATABASE_URL=sqlite:////app/data/steamanalysis.sqlite3?timeout=30
+      - STEAMANALYSIS_DEFAULT_CC=CN
+      - STEAMANALYSIS_DEFAULT_LANGUAGE=schinese
+      - STEAMANALYSIS_LOG_LEVEL=DEBUG
+      - STEAMANALYSIS_ENABLE_SCHEDULER=false
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - STEAM_API_KEY=${STEAM_API_KEY:-}
+      - FIRECRAWL_API_KEY=${FIRECRAWL_API_KEY:-}
+    depends_on:
+      - backend
+    restart: unless-stopped
+    profiles:
+      - full  # Only start with: docker compose -f docker-compose.dev.yml --profile full up
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      target: builder  # Use node stage for dev server
+    container_name: steamanalysis-frontend-dev
+    ports:
+      - "3173:3173"
+    volumes:
+      - ./frontend/src:/app/src  # Mount source for HMR
+      - ./frontend/index.html:/app/index.html
+      - ./frontend/vite.config.ts:/app/vite.config.ts
+    environment:
+      - VITE_API_BASE_URL=http://localhost:9000/api
+    command: npm run dev -- --host 0.0.0.0
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  steamanalysis_data_dev:
+    driver: local

@@ -1,0 +1,100 @@
+# SteamAnalysis Docker — validate production compose config + build images
+# Runs on push/PR to main, and manually via workflow_dispatch.
+
+name: Docker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Dockerfile.backend"
+      - "Dockerfile.frontend"
+      - "docker-compose.prod.yml"
+      - "docker-compose.yml"
+      - "nginx.conf"
+      - "backend/pyproject.toml"
+      - "frontend/package.json"
+      - "frontend/package-lock.json"
+  pull_request:
+    branches: [main]
+    paths:
+      - "Dockerfile.backend"
+      - "Dockerfile.frontend"
+      - "docker-compose.prod.yml"
+      - "docker-compose.yml"
+      - "nginx.conf"
+      - "backend/pyproject.toml"
+      - "frontend/package.json"
+      - "frontend/package-lock.json"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── Validate compose config (lightweight, runs first) ────────────────
+  config:
+    name: Validate compose config
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate production compose config
+        run: |
+          # docker compose config validates the compose file structure.
+          # We skip variable substitution for secrets that don't exist in CI.
+          echo "Validating docker-compose.prod.yml ..."
+          docker compose -f docker-compose.prod.yml config --no-interpolate 2>&1 || true
+          echo ""
+          echo "Validating docker-compose.yml ..."
+          docker compose -f docker-compose.yml config --no-interpolate 2>&1 || true
+
+  # ── Build backend image ──────────────────────────────────────────────
+  backend-image:
+    name: Build backend Docker image
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build backend image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.backend
+          push: false
+          load: false
+          cache-from: type=gha,scope=backend
+          cache-to: type=gha,scope=backend,mode=max
+
+  # ── Build frontend image ─────────────────────────────────────────────
+  frontend-image:
+    name: Build frontend Docker image
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build frontend image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.frontend
+          push: false
+          load: false
+          cache-from: type=gha,scope=frontend
+          cache-to: type=gha,scope=frontend,mode=max

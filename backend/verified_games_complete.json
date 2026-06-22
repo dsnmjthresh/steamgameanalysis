@@ -1,0 +1,2424 @@
+[
+  {
+    "appid": 440,
+    "name": "Team Fortress 2",
+    "type": "game",
+    "base_players": 70000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 1100000,
+    "genres": [
+      "Action",
+      "Free to Play"
+    ],
+    "developers": [
+      "Valve"
+    ],
+    "publishers": [
+      "Valve"
+    ]
+  },
+  {
+    "appid": 570,
+    "name": "Dota 2",
+    "type": "game",
+    "base_players": 450000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 2200000,
+    "genres": [
+      "Action",
+      "Strategy",
+      "Free to Play"
+    ],
+    "developers": [
+      "Valve"
+    ],
+    "publishers": [
+      "Valve"
+    ]
+  },
+  {
+    "appid": 730,
+    "name": "Counter-Strike 2",
+    "type": "game",
+    "base_players": 800000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 8500000,
+    "genres": [
+      "Action",
+      "Free to Play"
+    ],
+    "developers": [
+      "Valve"
+    ],
+    "publishers": [
+      "Valve"
+    ]
+  },
+  {
+    "appid": 227300,
+    "name": "Euro Truck Simulator 2",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 8800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 765418,
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "developers": [
+      "SCS Software"
+    ],
+    "publishers": [
+      "SCS Software"
+    ]
+  },
+  {
+    "appid": 236850,
+    "name": "Europa Universalis IV",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 21800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 95131,
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Paradox Development Studio",
+      "Paradox Tinto"
+    ],
+    "publishers": [
+      "Paradox Interactive"
+    ]
+  },
+  {
+    "appid": 239140,
+    "name": "Dying Light",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 9800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 372071,
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "developers": [
+      "Techland"
+    ],
+    "publishers": [
+      "Techland"
+    ]
+  },
+  {
+    "appid": 251570,
+    "name": "7 Days to Die",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 15200,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 272766,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "The Fun Pimps"
+    ],
+    "publishers": [
+      "The Fun Pimps Entertainment LLC"
+    ]
+  },
+  {
+    "appid": 252490,
+    "name": "Rust",
+    "type": "game",
+    "base_players": 40000,
+    "peak_mult": 1.5,
+    "price": 13800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 1138899,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "developers": [
+      "Facepunch Studios"
+    ],
+    "publishers": [
+      "Facepunch Studios"
+    ]
+  },
+  {
+    "appid": 255710,
+    "name": "Cities: Skylines",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 13800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 217528,
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Colossal Order"
+    ],
+    "publishers": [
+      "Paradox Interactive"
+    ]
+  },
+  {
+    "appid": 268910,
+    "name": "Cuphead",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 6800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 188406,
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "developers": [
+      "Studio MDHR Entertainment Inc."
+    ],
+    "publishers": [
+      "Studio MDHR Entertainment Inc."
+    ]
+  },
+  {
+    "appid": 271590,
+    "name": "Grand Theft Auto V Legacy",
+    "type": "game",
+    "base_players": 40000,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 1879831,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Rockstar North"
+    ],
+    "publishers": [
+      "Rockstar Games"
+    ]
+  },
+  {
+    "appid": 275850,
+    "name": "No Man's Sky",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 17500,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 306912,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Hello Games"
+    ],
+    "publishers": [
+      "Hello Games"
+    ]
+  },
+  {
+    "appid": 281990,
+    "name": "Stellaris",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 19800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 140748,
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Paradox Development Studio"
+    ],
+    "publishers": [
+      "Paradox Interactive"
+    ]
+  },
+  {
+    "appid": 289070,
+    "name": "Sid Meier’s Civilization® VI",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 22000,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 272423,
+    "genres": [
+      "Strategy"
+    ],
+    "developers": [
+      "Firaxis Games",
+      "Aspyr (Mac)",
+      "Aspyr (Linux)"
+    ],
+    "publishers": [
+      "2K",
+      "Aspyr (Mac)",
+      "Aspyr (Linux)"
+    ]
+  },
+  {
+    "appid": 292030,
+    "name": "The Witcher 3: Wild Hunt",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 14900,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 816523,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "CD PROJEKT RED"
+    ],
+    "publishers": [
+      "CD PROJEKT RED"
+    ]
+  },
+  {
+    "appid": 294100,
+    "name": "RimWorld",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 12800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 203357,
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Ludeon Studios"
+    ],
+    "publishers": [
+      "Ludeon Studios"
+    ]
+  },
+  {
+    "appid": 304930,
+    "name": "Unturned",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 7515,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Indie",
+      "Free To Play"
+    ],
+    "developers": [
+      "Smartly Dressed Games"
+    ],
+    "publishers": [
+      "Smartly Dressed Games"
+    ]
+  },
+  {
+    "appid": 306130,
+    "name": "The Elder Scrolls® Online",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 8300,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 133065,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "developers": [
+      "ZeniMax Online Studios"
+    ],
+    "publishers": [
+      "Bethesda Softworks"
+    ]
+  },
+  {
+    "appid": 322330,
+    "name": "Don't Starve Together",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 2400,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 367038,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Klei Entertainment"
+    ],
+    "publishers": [
+      "Klei Entertainment"
+    ]
+  },
+  {
+    "appid": 346110,
+    "name": "ARK: Survival Evolved",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 5800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 578890,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "developers": [
+      "Studio Wildcard",
+      "Instinct Games",
+      "Efecto Studios",
+      "Virtual Basement LLC"
+    ],
+    "publishers": [
+      "Studio Wildcard",
+      "Snail Games USA"
+    ]
+  },
+  {
+    "appid": 359550,
+    "name": "Tom Clancy's Rainbow Six Siege",
+    "type": "game",
+    "base_players": 200000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 1242341,
+    "genres": [
+      "Action",
+      "Free To Play"
+    ],
+    "developers": [
+      "Ubisoft Montreal"
+    ],
+    "publishers": [
+      "Ubisoft"
+    ]
+  },
+  {
+    "appid": 367520,
+    "name": "Hollow Knight",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 5800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 486539,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "developers": [
+      "Team Cherry"
+    ],
+    "publishers": [
+      "Team Cherry"
+    ]
+  },
+  {
+    "appid": 374320,
+    "name": "DARK SOULS™ III",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 26800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 275760,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "FromSoftware, Inc."
+    ],
+    "publishers": [
+      "FromSoftware, Inc.",
+      "Bandai Namco Entertainment"
+    ]
+  },
+  {
+    "appid": 376210,
+    "name": "The Isle",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 7600,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 103948,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Massively Multiplayer",
+      "Simulation",
+      "Early Access"
+    ],
+    "developers": [
+      "Afterthought LLC"
+    ],
+    "publishers": [
+      "Afterthought LLC"
+    ]
+  },
+  {
+    "appid": 381210,
+    "name": "Dead by Daylight",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 9375,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 659672,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Behaviour Interactive Inc."
+    ],
+    "publishers": [
+      "Behaviour Interactive Inc."
+    ]
+  },
+  {
+    "appid": 383150,
+    "name": "Dead Island Definitive Edition",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 7400,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 23444,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Techland"
+    ],
+    "publishers": [
+      "Deep Silver"
+    ]
+  },
+  {
+    "appid": 389730,
+    "name": "TEKKEN 7",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 39800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 67455,
+    "genres": [
+      "Action",
+      "Sports"
+    ],
+    "developers": [
+      "BANDAI NAMCO Studios Inc."
+    ],
+    "publishers": [
+      "BANDAI NAMCO Entertainment"
+    ]
+  },
+  {
+    "appid": 413150,
+    "name": "Stardew Valley",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 4800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 867779,
+    "genres": [
+      "Indie",
+      "RPG",
+      "Simulation"
+    ],
+    "developers": [
+      "ConcernedApe"
+    ],
+    "publishers": [
+      "ConcernedApe"
+    ]
+  },
+  {
+    "appid": 417290,
+    "name": "Ghost of a Tale",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 7600,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 4134,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "SeithCG"
+    ],
+    "publishers": [
+      "SeithCG"
+    ]
+  },
+  {
+    "appid": 427520,
+    "name": "Factorio",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 13000,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 191476,
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Wube Software LTD."
+    ],
+    "publishers": [
+      "Wube Software LTD."
+    ]
+  },
+  {
+    "appid": 431960,
+    "name": "Wallpaper Engine",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 2290,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 913857,
+    "genres": [
+      "Casual",
+      "Indie",
+      "Animation & Modeling",
+      "Design & Illustration",
+      "Photo Editing",
+      "Utilities"
+    ],
+    "developers": [
+      "Wallpaper Engine Team"
+    ],
+    "publishers": [
+      "Wallpaper Engine Team"
+    ]
+  },
+  {
+    "appid": 433850,
+    "name": "Z1 Battle Royale",
+    "type": "game",
+    "base_players": 30000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 143092,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Free To Play",
+      "Massively Multiplayer"
+    ],
+    "developers": [
+      "Daybreak Game Company"
+    ],
+    "publishers": [
+      "Daybreak Game Company"
+    ]
+  },
+  {
+    "appid": 440900,
+    "name": "Conan Exiles Enhanced",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 12900,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 78139,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Funcom",
+      "Inflexion Games"
+    ],
+    "publishers": [
+      "Funcom"
+    ]
+  },
+  {
+    "appid": 489830,
+    "name": "The Elder Scrolls V: Skyrim Special Edition",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 16500,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 211300,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "Bethesda Game Studios"
+    ],
+    "publishers": [
+      "Bethesda Softworks"
+    ]
+  },
+  {
+    "appid": 493340,
+    "name": "Planet Coaster",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 12200,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 59446,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Frontier Developments",
+      "Aspyr (Mac)"
+    ],
+    "publishers": [
+      "Frontier Developments",
+      "Aspyr (Mac)"
+    ]
+  },
+  {
+    "appid": 534380,
+    "name": "Dying Light 2 Stay Human: Reloaded Edition",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 19800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 160089,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Techland"
+    ],
+    "publishers": [
+      "Techland"
+    ]
+  },
+  {
+    "appid": 548430,
+    "name": "Deep Rock Galactic",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 10800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 300212,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Ghost Ship Games"
+    ],
+    "publishers": [
+      "Coffee Stain Publishing"
+    ]
+  },
+  {
+    "appid": 552520,
+    "name": "Far Cry® 5",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 29800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 170124,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Ubisoft Montreal",
+      "Red Storm",
+      "Ubisoft Shanghai",
+      "Ubisoft Toronto",
+      "Ubisoft Kiev"
+    ],
+    "publishers": [
+      "Ubisoft"
+    ]
+  },
+  {
+    "appid": 578080,
+    "name": "PUBG: BATTLEGROUNDS",
+    "type": "game",
+    "base_players": 200000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 1760294,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "Free To Play"
+    ],
+    "developers": [
+      "PUBG Corporation"
+    ],
+    "publishers": [
+      "KRAFTON, Inc."
+    ]
+  },
+  {
+    "appid": 582010,
+    "name": "Monster Hunter: World",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 14800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 315483,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ]
+  },
+  {
+    "appid": 594570,
+    "name": "Total War: WARHAMMER II",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 26800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 87774,
+    "genres": [
+      "Action",
+      "Strategy"
+    ],
+    "developers": [
+      "CREATIVE ASSEMBLY",
+      "Feral Interactive (Mac)",
+      "Feral Interactive (Linux)"
+    ],
+    "publishers": [
+      "SEGA",
+      "Feral Interactive (Mac)",
+      "Feral Interactive (Linux)"
+    ]
+  },
+  {
+    "appid": 632470,
+    "name": "Disco Elysium - The Final Cut",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 13600,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 114691,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "ZA/UM"
+    ],
+    "publishers": [
+      "ZA/UM"
+    ]
+  },
+  {
+    "appid": 646570,
+    "name": "Slay the Spire",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 8800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 189092,
+    "genres": [
+      "Indie",
+      "Strategy"
+    ],
+    "developers": [
+      "Mega Crit"
+    ],
+    "publishers": [
+      "Mega Crit"
+    ]
+  },
+  {
+    "appid": 648350,
+    "name": "Jurassic World Evolution",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 12000,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 48116,
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Frontier Developments"
+    ],
+    "publishers": [
+      "Frontier Developments"
+    ]
+  },
+  {
+    "appid": 703080,
+    "name": "Planet Zoo",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 18000,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 78624,
+    "genres": [
+      "Casual",
+      "Simulation",
+      "Strategy"
+    ],
+    "developers": [
+      "Frontier Developments"
+    ],
+    "publishers": [
+      "Frontier Developments"
+    ]
+  },
+  {
+    "appid": 739630,
+    "name": "Phasmophobia",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 6800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 676282,
+    "genres": [
+      "Action",
+      "Indie",
+      "Early Access"
+    ],
+    "developers": [
+      "Kinetic Games"
+    ],
+    "publishers": [
+      "Kinetic Games"
+    ]
+  },
+  {
+    "appid": 745940,
+    "name": "Quanect",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 600,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 0,
+    "genres": [
+      "Adventure",
+      "Indie",
+      "Simulation"
+    ],
+    "developers": [
+      "Sergey Chernenko"
+    ],
+    "publishers": [
+      "Sergey Chernenko"
+    ]
+  },
+  {
+    "appid": 872790,
+    "name": "Football Manager 2019",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 7388,
+    "genres": [
+      "Simulation",
+      "Sports"
+    ],
+    "developers": [
+      "Sports Interactive"
+    ],
+    "publishers": [
+      "SEGA"
+    ]
+  },
+  {
+    "appid": 892970,
+    "name": "Valheim",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 7400,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 452647,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Early Access"
+    ],
+    "developers": [
+      "Iron Gate AB"
+    ],
+    "publishers": [
+      "Coffee Stain Publishing"
+    ]
+  },
+  {
+    "appid": 945360,
+    "name": "Among Us",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 2500,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 643269,
+    "genres": [
+      "Casual"
+    ],
+    "developers": [
+      "Innersloth"
+    ],
+    "publishers": [
+      "Innersloth"
+    ]
+  },
+  {
+    "appid": 949230,
+    "name": "Cities: Skylines II",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 19800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 61389,
+    "genres": [
+      "Simulation"
+    ],
+    "developers": [
+      "Iceflake Studios",
+      "Colossal Order"
+    ],
+    "publishers": [
+      "Paradox Interactive"
+    ]
+  },
+  {
+    "appid": 990080,
+    "name": "Hogwarts Legacy",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 38400,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 269279,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Avalanche Software"
+    ],
+    "publishers": [
+      "Warner Bros. Games"
+    ]
+  },
+  {
+    "appid": 999220,
+    "name": "Amnesia: Rebirth",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 10800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 7805,
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "developers": [
+      "Frictional Games"
+    ],
+    "publishers": [
+      "Frictional Games"
+    ]
+  },
+  {
+    "appid": 1063730,
+    "name": "New World: Aeternum",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 253851,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "developers": [
+      "Amazon Game Studios"
+    ],
+    "publishers": [
+      "Amazon Game Studios"
+    ]
+  },
+  {
+    "appid": 1085660,
+    "name": "Destiny 2",
+    "type": "game",
+    "base_players": 30000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 135603,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Free To Play"
+    ],
+    "developers": [
+      "Bungie"
+    ],
+    "publishers": [
+      "Bungie"
+    ]
+  },
+  {
+    "appid": 1086940,
+    "name": "Baldur's Gate 3",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 29800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 740392,
+    "genres": [
+      "Adventure",
+      "RPG",
+      "Strategy"
+    ],
+    "developers": [
+      "Larian Studios"
+    ],
+    "publishers": [
+      "Larian Studios"
+    ]
+  },
+  {
+    "appid": 1091500,
+    "name": "Cyberpunk 2077",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 29800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 852373,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "CD PROJEKT RED"
+    ],
+    "publishers": [
+      "CD PROJEKT RED"
+    ]
+  },
+  {
+    "appid": 1145350,
+    "name": "Hades II",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 10800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 110639,
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "Supergiant Games"
+    ],
+    "publishers": [
+      "Supergiant Games"
+    ]
+  },
+  {
+    "appid": 1145360,
+    "name": "Hades",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 9200,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 281211,
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "Supergiant Games"
+    ],
+    "publishers": [
+      "Supergiant Games"
+    ]
+  },
+  {
+    "appid": 1151640,
+    "name": "Horizon Zero Dawn™ Complete Edition",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 95428,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Guerrilla"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ]
+  },
+  {
+    "appid": 1158850,
+    "name": "The Great Ace Attorney Chronicles",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 4980,
+    "genres": [
+      "Adventure"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ]
+  },
+  {
+    "appid": 1172380,
+    "name": "STAR WARS Jedi: Fallen Order™",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 19800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 150707,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Respawn Entertainment"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ]
+  },
+  {
+    "appid": 1172470,
+    "name": "Apex Legends™",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 1578,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Free To Play"
+    ],
+    "developers": [
+      "Respawn"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ]
+  },
+  {
+    "appid": 1174180,
+    "name": "Red Dead Redemption 2",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 27900,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 812026,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Rockstar Games"
+    ],
+    "publishers": [
+      "Rockstar Games"
+    ]
+  },
+  {
+    "appid": 1190460,
+    "name": "DEATH STRANDING",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 50832,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "KOJIMA PRODUCTIONS"
+    ],
+    "publishers": [
+      "505 Games"
+    ]
+  },
+  {
+    "appid": 1203220,
+    "name": "NARAKA: BLADEPOINT",
+    "type": "game",
+    "base_players": 30000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 197676,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "Free To Play"
+    ],
+    "developers": [
+      "24 Entertainment"
+    ],
+    "publishers": [
+      "NetEase Games "
+    ]
+  },
+  {
+    "appid": 1222670,
+    "name": "The Sims™ 4",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 83046,
+    "genres": [
+      "Adventure",
+      "Casual",
+      "Simulation",
+      "Free To Play"
+    ],
+    "developers": [
+      "Maxis"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ]
+  },
+  {
+    "appid": 1238840,
+    "name": "Battlefield™ 1",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 19800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 193799,
+    "genres": [
+      "Action",
+      "Massively Multiplayer"
+    ],
+    "developers": [
+      "DICE"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ]
+  },
+  {
+    "appid": 1239520,
+    "name": "Madden NFL 21",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 3557,
+    "genres": [
+      "Simulation",
+      "Sports",
+      "Strategy"
+    ],
+    "developers": [
+      "Electronic Arts"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ]
+  },
+  {
+    "appid": 1245620,
+    "name": "ELDEN RING",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 29800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 818467,
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "developers": [
+      "FromSoftware, Inc."
+    ],
+    "publishers": [
+      "FromSoftware, Inc.",
+      "Bandai Namco Entertainment"
+    ]
+  },
+  {
+    "appid": 1248130,
+    "name": "Farming Simulator 22",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 12400,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 68189,
+    "genres": [
+      "Simulation"
+    ],
+    "developers": [
+      "Giants Software"
+    ],
+    "publishers": [
+      "Giants Software"
+    ]
+  },
+  {
+    "appid": 1250410,
+    "name": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 29800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 68818,
+    "genres": [
+      "Simulation"
+    ],
+    "developers": [
+      "Asobo Studio"
+    ],
+    "publishers": [
+      "Xbox Game Studios"
+    ]
+  },
+  {
+    "appid": 1262540,
+    "name": "Need for Speed™",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 15800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 24006,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Racing",
+      "Simulation"
+    ],
+    "developers": [
+      "Ghost Games"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ]
+  },
+  {
+    "appid": 1286830,
+    "name": "STAR WARS™: The Old Republic™",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 458,
+    "genres": [
+      "Massively Multiplayer",
+      "RPG",
+      "Free To Play"
+    ],
+    "developers": [
+      "Broadsword"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ]
+  },
+  {
+    "appid": 1290000,
+    "name": "PowerWash Simulator",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 8800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 50254,
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation"
+    ],
+    "developers": [
+      "FuturLab"
+    ],
+    "publishers": [
+      "FuturLab"
+    ]
+  },
+  {
+    "appid": 1293830,
+    "name": "Forza Horizon 4",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 277596,
+    "genres": [
+      "Racing"
+    ],
+    "developers": [
+      "Playground Games"
+    ],
+    "publishers": [
+      "Xbox Game Studios"
+    ]
+  },
+  {
+    "appid": 1326470,
+    "name": "Sons Of The Forest",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 10800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 271259,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Simulation"
+    ],
+    "developers": [
+      "Endnight Games Ltd"
+    ],
+    "publishers": [
+      "Newnight "
+    ]
+  },
+  {
+    "appid": 1328350,
+    "name": "Turbo Overkill",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 7600,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 6205,
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "developers": [
+      "Trigger Happy Interactive"
+    ],
+    "publishers": [
+      "Apogee Entertainment"
+    ]
+  },
+  {
+    "appid": 1364780,
+    "name": "Street Fighter™ 6",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 19800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 46673,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ]
+  },
+  {
+    "appid": 1446780,
+    "name": "MONSTER HUNTER RISE",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 19800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 77364,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ]
+  },
+  {
+    "appid": 1478810,
+    "name": "War Thunder - T-72AV (TURMS-T) Pack",
+    "type": "dlc",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 262,
+    "genres": [
+      "Action",
+      "Massively Multiplayer",
+      "Simulation",
+      "Free To Play"
+    ],
+    "developers": [
+      "Gaijin Entertainment"
+    ],
+    "publishers": [
+      "Gaijin Network Ltd"
+    ]
+  },
+  {
+    "appid": 1517290,
+    "name": "Battlefield™ 2042",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 24800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 259188,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual"
+    ],
+    "developers": [
+      "DICE"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ]
+  },
+  {
+    "appid": 1551360,
+    "name": "Forza Horizon 5",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 19800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 252813,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Racing",
+      "Simulation",
+      "Sports"
+    ],
+    "developers": [
+      "Playground Games"
+    ],
+    "publishers": [
+      "Xbox Game Studios"
+    ]
+  },
+  {
+    "appid": 1593500,
+    "name": "God of War",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 34500,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 125891,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Santa Monica Studio",
+      "Jetpack Interactive"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ]
+  },
+  {
+    "appid": 1623730,
+    "name": "Palworld",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 10800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 355119,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Early Access"
+    ],
+    "developers": [
+      "Pocketpair"
+    ],
+    "publishers": [
+      "Pocketpair"
+    ]
+  },
+  {
+    "appid": 1649240,
+    "name": "Returnal™",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 41400,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 6018,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Housemarque",
+      "Climax Studios"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ]
+  },
+  {
+    "appid": 1659040,
+    "name": "HITMAN World of Assassination",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 10800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 53935,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "IO Interactive A/S"
+    ],
+    "publishers": [
+      "IO Interactive A/S"
+    ]
+  },
+  {
+    "appid": 1687950,
+    "name": "Persona 5 Royal",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 26800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 85614,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "ATLUS"
+    ],
+    "publishers": [
+      "SEGA"
+    ]
+  },
+  {
+    "appid": 1716740,
+    "name": "Starfield",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 20900,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 113845,
+    "genres": [
+      "RPG"
+    ],
+    "developers": [
+      "Bethesda Game Studios"
+    ],
+    "publishers": [
+      "Bethesda Softworks"
+    ]
+  },
+  {
+    "appid": 1745510,
+    "name": "Lunacid",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 5600,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 9967,
+    "genres": [
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "KIRA LLC"
+    ],
+    "publishers": [
+      "KIRA LLC",
+      "CRITICAL REFLEX"
+    ]
+  },
+  {
+    "appid": 1781410,
+    "name": "Super Jigsaw Puzzle: Generations - Clocks",
+    "type": "dlc",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 2600,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 0,
+    "genres": [
+      "Casual",
+      "Free To Play",
+      "Indie",
+      "Strategy"
+    ],
+    "developers": [
+      "Flat Cat Games"
+    ],
+    "publishers": [
+      "Flat Cat Games"
+    ]
+  },
+  {
+    "appid": 1794680,
+    "name": "Vampire Survivors",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 2500,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 248719,
+    "genres": [
+      "Action",
+      "Casual",
+      "Indie",
+      "RPG"
+    ],
+    "developers": [
+      "poncle"
+    ],
+    "publishers": [
+      "poncle"
+    ]
+  },
+  {
+    "appid": 1809700,
+    "name": "Persona 3 Portable",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 12500,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 4594,
+    "genres": [
+      "Adventure",
+      "RPG",
+      "Strategy"
+    ],
+    "developers": [
+      "ATLUS"
+    ],
+    "publishers": [
+      "SEGA"
+    ]
+  },
+  {
+    "appid": 1811260,
+    "name": "EA SPORTS™ FIFA 23",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 123828,
+    "genres": [
+      "Simulation",
+      "Sports"
+    ],
+    "developers": [
+      "EA Canada",
+      "EA Romania"
+    ],
+    "publishers": [
+      "Electronic Arts"
+    ]
+  },
+  {
+    "appid": 1823910,
+    "name": "Mondrian Squares",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 600,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 0,
+    "genres": [
+      "Casual",
+      "Indie",
+      "Strategy"
+    ],
+    "developers": [
+      "LH Games Limited"
+    ],
+    "publishers": [
+      "LH Games Limited"
+    ]
+  },
+  {
+    "appid": 1888160,
+    "name": "ARMORED CORE™ VI FIRES OF RUBICON™",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 29800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 65339,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "FromSoftware, Inc."
+    ],
+    "publishers": [
+      "FromSoftware, Inc.",
+      "Bandai Namco Entertainment Inc."
+    ]
+  },
+  {
+    "appid": 1938090,
+    "name": "Call of Duty®",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 408754,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Treyarch",
+      "Raven Software",
+      "Beenox",
+      "High Moon Studios",
+      "Sledgehammer Games",
+      "Infinity Ward",
+      "Activision Shanghai",
+      "Demonware"
+    ],
+    "publishers": [
+      "Activision"
+    ]
+  },
+  {
+    "appid": 1940340,
+    "name": "Darkest Dungeon® II",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 13800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 23387,
+    "genres": [
+      "Indie",
+      "RPG",
+      "Strategy"
+    ],
+    "developers": [
+      "Red Hook Studios"
+    ],
+    "publishers": [
+      "Red Hook Studios"
+    ]
+  },
+  {
+    "appid": 1948980,
+    "name": "Hero's Adventure: Road to Passion",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 6900,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 22353,
+    "genres": [
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation"
+    ],
+    "developers": [
+      "半瓶醋工作室（Half Amateur Studio）"
+    ],
+    "publishers": [
+      "XD"
+    ]
+  },
+  {
+    "appid": 1966720,
+    "name": "Lethal Company",
+    "type": "game",
+    "base_players": 10000,
+    "peak_mult": 1.5,
+    "price": 4200,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 409480,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Early Access"
+    ],
+    "developers": [
+      "Zeekerss"
+    ],
+    "publishers": [
+      "Zeekerss"
+    ]
+  },
+  {
+    "appid": 1979980,
+    "name": "Ultra Sweeper",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 0,
+    "genres": [
+      "Casual",
+      "Free To Play"
+    ],
+    "developers": [
+      "thepowerlies"
+    ],
+    "publishers": [
+      "thepowerlies"
+    ]
+  },
+  {
+    "appid": 2000950,
+    "name": "Call of Duty®: Modern Warfare®",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 39900,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 39898,
+    "genres": [
+      "Action"
+    ],
+    "developers": [
+      "Infinity Ward",
+      "Beenox",
+      "High Moon Studios",
+      "Raven Software"
+    ],
+    "publishers": [
+      "Activision"
+    ]
+  },
+  {
+    "appid": 2050650,
+    "name": "Resident Evil 4",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 19800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 166898,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "CAPCOM Co., Ltd."
+    ],
+    "publishers": [
+      "CAPCOM Co., Ltd."
+    ]
+  },
+  {
+    "appid": 2208920,
+    "name": "Assassin's Creed Valhalla",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 24800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 39178,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Ubisoft Montreal"
+    ],
+    "publishers": [
+      "Ubisoft"
+    ]
+  },
+  {
+    "appid": 2215430,
+    "name": "Ghost of Tsushima DIRECTOR'S CUT",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.5,
+    "price": 39800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 61226,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Sucker Punch Productions",
+      "Nixxes Software"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ]
+  },
+  {
+    "appid": 2239550,
+    "name": "Watch Dogs®: Legion",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 29800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 11434,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "developers": [
+      "Ubisoft Toronto"
+    ],
+    "publishers": [
+      "Ubisoft"
+    ]
+  },
+  {
+    "appid": 2300320,
+    "name": "Farming Simulator 25",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 12600,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 35305,
+    "genres": [
+      "Simulation"
+    ],
+    "developers": [
+      "GIANTS Software"
+    ],
+    "publishers": [
+      "GIANTS Software"
+    ]
+  },
+  {
+    "appid": 2357570,
+    "name": "Overwatch®",
+    "type": "game",
+    "base_players": 5000,
+    "peak_mult": 1.3,
+    "price": 0,
+    "currency": "CNY",
+    "is_free": true,
+    "recommendations": 268,
+    "genres": [
+      "Action",
+      "Free To Play"
+    ],
+    "developers": [
+      "Blizzard Entertainment, Inc."
+    ],
+    "publishers": [
+      "Blizzard Entertainment, Inc."
+    ]
+  },
+  {
+    "appid": 2358720,
+    "name": "Black Myth: Wukong",
+    "type": "game",
+    "base_players": 20000,
+    "peak_mult": 1.5,
+    "price": 26800,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 872712,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "developers": [
+      "Game Science"
+    ],
+    "publishers": [
+      "Game Science"
+    ]
+  },
+  {
+    "appid": 2420110,
+    "name": "Horizon Forbidden West™ Complete Edition",
+    "type": "game",
+    "base_players": 1500,
+    "peak_mult": 1.5,
+    "price": 41400,
+    "currency": "CNY",
+    "is_free": false,
+    "recommendations": 19309,
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "developers": [
+      "Guerrilla",
+      "Nixxes Software"
+    ],
+    "publishers": [
+      "PlayStation Publishing LLC"
+    ]
+  }
+]
