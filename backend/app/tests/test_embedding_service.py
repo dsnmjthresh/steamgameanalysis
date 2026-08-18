@@ -9,7 +9,7 @@ Key behaviours under test:
 """
 
 import asyncio
-import os
+from collections.abc import Iterator
 from unittest.mock import AsyncMock, patch
 
 import pytest
@@ -20,10 +20,8 @@ from app.services.embedding_service import (
     _create_provider,
     embed_batch_sync,
     embed_text_sync,
-    get_embedding_service,
     reset_embedding_service,
 )
-
 
 # ---------------------------------------------------------------------------
 # Fixtures
@@ -31,7 +29,7 @@ from app.services.embedding_service import (
 
 
 @pytest.fixture(autouse=True)
-def _clear_singleton() -> None:
+def _clear_singleton() -> Iterator[None]:
     """Each test starts with a clean embedding service singleton."""
     reset_embedding_service()
     yield

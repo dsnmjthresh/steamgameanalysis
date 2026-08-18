@@ -25,71 +25,101 @@ branch_labels: str | Sequence[str] | None = None
 depends_on: str | Sequence[str] | None = None
 
 
+def _inspector():
+    return sa.inspect(op.get_bind())
+
+
+def _table_exists(name: str) -> bool:
+    return _inspector().has_table(name)
+
+
+def _column_exists(table: str, column: str) -> bool:
+    return column in {c["name"] for c in _inspector().get_columns(table)}
+
+
+def _index_exists(table: str, index: str) -> bool:
+    return index in {ix["name"] for ix in _inspector().get_indexes(table)}
+
+
 def upgrade() -> None:
+    # 000_baseline builds its schema from live ``SQLModel.metadata`` (the ORM
+    # models are the single source of truth).  Those models now already include
+    # the tables/columns this migration introduces, so on a fresh database
+    # 000's ``create_all`` has already created them.  Guard every statement so
+    # ``upgrade head`` works both on a fresh DB (all present → skip) and on a
+    # pre-001 DB (none present → apply).
+
     # ── 1. agent_runs ──────────────────────────────────────────────────
-    op.create_table(
-        "agent_runs",
-        sa.Column("id", sa.Integer(), primary_key=True),
-        sa.Column(
-            "conversation_id",
-            sa.Integer(),
-            sa.ForeignKey("conversations.id"),
-            index=True,
-            nullable=True,
-        ),
-        sa.Column("trace_id", sa.String(32), index=True, nullable=True),
-        sa.Column("state", sa.String(32), nullable=False, server_default="INIT"),
-        sa.Column("status", sa.String(20), nullable=False, server_default="running"),
-        sa.Column("input_query", sa.Text(), nullable=True),
-        sa.Column("output_answer", sa.Text(), nullable=True),
-        sa.Column("error_message", sa.Text(), nullable=True),
-        sa.Column("result_json", sa.Text(), nullable=False, server_default="{}"),
-        sa.Column("started_at", sa.DateTime(), nullable=False, server_default=sa.func.now()),
-        sa.Column("completed_at", sa.DateTime(), nullable=True),
-    )
-    op.create_index(
-        "ix_agent_runs_conv_status",
-        "agent_runs",
-        ["conversation_id", "status"],
-    )
+    if not _table_exists("agent_runs"):
+        op.create_table(
+            "agent_runs",
+            sa.Column("id", sa.Integer(), primary_key=True),
+            sa.Column(
+                "conversation_id",
+                sa.Integer(),
+                sa.ForeignKey("conversations.id"),
+                index=True,
+                nullable=True,
+            ),
+            sa.Column("trace_id", sa.String(32), index=True, nullable=True),
+            sa.Column("state", sa.String(32), nullable=False, server_default="INIT"),
+            sa.Column("status", sa.String(20), nullable=False, server_default="running"),
+            sa.Column("input_query", sa.Text(), nullable=True),
+            sa.Column("output_answer", sa.Text(), nullable=True),
+            sa.Column("error_message", sa.Text(), nullable=True),
+            sa.Column("result_json", sa.Text(), nullable=False, server_default="{}"),
+            sa.Column("started_at", sa.DateTime(), nullable=False, server_default=sa.func.now()),
+            sa.Column("completed_at", sa.DateTime(), nullable=True),
+        )
+        op.create_index(
+            "ix_agent_runs_conv_status",
+            "agent_runs",
+            ["conversation_id", "status"],
+        )
 
     # ── 2. agent_checkpoints ───────────────────────────────────────────
-    op.create_table(
-        "agent_checkpoints",
-        sa.Column("id", sa.Integer(), primary_key=True),
-        sa.Column(
-            "run_id",
-            sa.Integer(),
-            sa.ForeignKey("agent_runs.id"),
-            index=True,
-            nullable=False,
-        ),
-        sa.Column("trace_id", sa.String(32), index=True, nullable=True),
-        sa.Column("state", sa.String(32), nullable=False),
-        sa.Column("input_json", sa.Text(), nullable=False, server_default="{}"),
-        sa.Column("output_json", sa.Text(), nullable=False, server_default="{}"),
-        sa.Column("status", sa.String(20), nullable=False, server_default="success"),
-        sa.Column("error_message", sa.Text(), nullable=True),
-        sa.Column("started_at", sa.DateTime(), nullable=False, server_default=sa.func.now()),
-        sa.Column("completed_at", sa.DateTime(), nullable=True),
-    )
-    op.create_index(
-        "ix_agent_checkpoints_run_state",
-        "agent_checkpoints",
-        ["run_id", "state"],
-    )
+    if not _table_exists("agent_checkpoints"):
+        op.create_table(
+            "agent_checkpoints",
+            sa.Column("id", sa.Integer(), primary_key=True),
+            sa.Column(
+                "run_id",
+                sa.Integer(),
+                sa.ForeignKey("agent_runs.id"),
+                index=True,
+                nullable=False,
+            ),
+            sa.Column("trace_id", sa.String(32), index=True, nullable=True),
+            sa.Column("state", sa.String(32), nullable=False),
+            sa.Column("input_json", sa.Text(), nullable=False, server_default="{}"),
+            sa.Column("output_json", sa.Text(), nullable=False, server_default="{}"),
+            sa.Column("status", sa.String(20), nullable=False, server_default="success"),
+            sa.Column("error_message", sa.Text(), nullable=True),
+            sa.Column("started_at", sa.DateTime(), nullable=False, server_default=sa.func.now()),
+            sa.Column("completed_at", sa.DateTime(), nullable=True),
+        )
+        op.create_index(
+            "ix_agent_checkpoints_run_state",
+            "agent_checkpoints",
+            ["run_id", "state"],
+        )
 
     # ── 3. conversations.user_id ──────────────────────────────────────
     # Use raw SQL DDL to avoid batch-mode temp-table issues on SQLite.
-    op.execute("ALTER TABLE conversations ADD COLUMN user_id INTEGER REFERENCES users(id)")
-    op.create_index("ix_conversations_user_id", "conversations", ["user_id"])
+    if not _column_exists("conversations", "user_id"):
+        op.execute("ALTER TABLE conversations ADD COLUMN user_id INTEGER REFERENCES users(id)")
+    if not _index_exists("conversations", "ix_conversations_user_id"):
+        op.create_index("ix_conversations_user_id", "conversations", ["user_id"])
 
     # ── 4. analysis_reports reproducibility columns ────────────────────
     # (ix_analysis_reports_created_at already exists from baseline —
     #  the model declared index=True on created_at since 000.)
-    op.execute("ALTER TABLE analysis_reports ADD COLUMN model VARCHAR(64)")
-    op.execute("ALTER TABLE analysis_reports ADD COLUMN prompt_version VARCHAR(32)")
-    op.execute("ALTER TABLE analysis_reports ADD COLUMN tool_versions VARCHAR(512)")
+    if not _column_exists("analysis_reports", "model"):
+        op.execute("ALTER TABLE analysis_reports ADD COLUMN model VARCHAR(64)")
+    if not _column_exists("analysis_reports", "prompt_version"):
+        op.execute("ALTER TABLE analysis_reports ADD COLUMN prompt_version VARCHAR(32)")
+    if not _column_exists("analysis_reports", "tool_versions"):
+        op.execute("ALTER TABLE analysis_reports ADD COLUMN tool_versions VARCHAR(512)")
 
 
 def downgrade() -> None:

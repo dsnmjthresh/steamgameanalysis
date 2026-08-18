@@ -70,6 +70,7 @@ class Settings(BaseSettings):
     )
 
     # Rate limiting
+    rate_limit_enabled: bool = True  # STEAMANALYSIS_RATE_LIMIT_ENABLED=false disables middleware (tests)
     rate_limit_requests_per_minute: int = 30
     rate_limit_chat_per_minute: int = 10
     rate_limit_window_seconds: int = 60

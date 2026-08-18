@@ -153,13 +153,16 @@ app = FastAPI(
 # Reject oversized request bodies early
 app.add_middleware(RequestSizeLimitMiddleware, max_bytes=5 * 1024 * 1024)
 
-# Rate limiting — inside Auth so auth failures don't consume rate-limit budget
-app.add_middleware(
-    RateLimitMiddleware,
-    max_requests=settings_obj.rate_limit_requests_per_minute,
-    window_s=settings_obj.rate_limit_window_seconds,
-    busy_routes={"/api/chat": settings_obj.rate_limit_chat_per_minute},
-)
+# Rate limiting — inside Auth so auth failures don't consume rate-limit budget.
+# Disabled when STEAMANALYSIS_RATE_LIMIT_ENABLED=false (the test suite shares one
+# in-memory app instance, whose per-IP window would otherwise trip 429 mid-run).
+if settings_obj.rate_limit_enabled:
+    app.add_middleware(
+        RateLimitMiddleware,
+        max_requests=settings_obj.rate_limit_requests_per_minute,
+        window_s=settings_obj.rate_limit_window_seconds,
+        busy_routes={"/api/chat": settings_obj.rate_limit_chat_per_minute},
+    )
 
 # Authentication — outside RateLimit so private routes fail with 401 first
 app.add_middleware(AuthMiddleware)

@@ -1,5 +1,13 @@
 """Test fixtures and infrastructure for SteamAnalysis backend tests."""
 
+import os
+
+# Disable rate limiting for the whole suite. The FastAPI app (with its in-memory
+# rate limiter) is shared across hundreds of tests, so the per-IP sliding window
+# would otherwise trip 429 partway through the run. Must be set before any
+# ``app.*`` import below calls get_settings() and caches the result.
+os.environ["STEAMANALYSIS_RATE_LIMIT_ENABLED"] = "false"
+
 from collections.abc import AsyncIterator, Generator
 
 import pytest
